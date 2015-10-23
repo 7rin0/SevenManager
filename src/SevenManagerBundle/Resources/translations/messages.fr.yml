@@ -1,0 +1,42 @@
+seven_manager:
+    shared:
+        labels:
+            homepage: Page d'Accueil
+            article: Article
+            node: Nœud
+            gallery: Galerie
+            page: Page
+            post: Post
+            form: Formulaire
+    admin:
+        fields:
+            title:
+              helper: Saisir le titre de la page
+            subtitle:
+              helper: Saisir le sous-titre de la page
+            name:
+              helper: Saisir un identifiant unique de la page
+            content:
+              helper: Saisir le contenu principal de la page
+            image:
+              helper: Saisir l'image principal de la page
+        blocks:
+        pages:
+            homepage:
+                title: Ajouter Page d'Accueil
+            article:
+                title: Ajouter un article
+            node:
+                title: Ajouter un nœud
+            gallery:
+                title: Ajouter une galerie
+            page:
+                title: Ajouter une page
+            post:
+                title: Ajouter un post
+            form:
+                title: Ajouter un formulaire
+    front:
+        homepage:
+            title: Homepage Front label
+            body: Homepage Front Description

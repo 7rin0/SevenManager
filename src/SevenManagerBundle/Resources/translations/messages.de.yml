@@ -1,0 +1,42 @@
+seven_manager:
+    shared:
+        labels:
+            homepage: Homepage (trad to de)
+            article: Article (trad to de)
+            node: Node (trad to de)
+            gallery: Gallery (trad to de)
+            page: Page (trad to de)
+            post: Post (trad to de)
+            form: Form (trad to de)
+    admin:
+        fields:
+            title:
+              helper: Set page title (trad to de)
+            subtitle:
+              helper: Set page title (trad to de)
+            name:
+              helper: Set page unique name (trad to de)
+            content:
+              helper: Set page body (trad to de)
+            image:
+              helper: Set page default image (trad to de)
+        blocks:
+        pages:
+            homepage:
+                title: Add Homepage (trad to de)
+            article:
+                title: Add an article (trad to de)
+            node:
+                title: Add a node (trad to de)
+            gallery:
+                title: Add a gallery (trad to de)
+            page:
+                title: Add a page (trad to de)
+            post:
+                title: Add a post (trad to de)
+            form:
+                title: Add a form (trad to de)
+    front:
+        homepage:
+            title: Homepage Front label
+            body: Homepage Front Description

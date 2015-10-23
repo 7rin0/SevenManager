@@ -1,0 +1,17 @@
+cmf_routing:
+    chain:
+        routers_by_id:
+            # the standard DynamicRouter
+            cmf_routing.dynamic_router: 200
+
+            # the core symfony router
+            router.default: 100
+    dynamic:
+        persistence:
+            phpcr:
+                route_basepath: /seven-manager/routes
+
+cmf_routing_auto:
+    persistence:
+        phpcr:
+            enabled: true

@@ -1,0 +1,23 @@
+parameters:
+    # if you're using Jackalope Doctrine DBAL
+    phpcr_backend:
+        type: doctrinedbal
+        connection: default
+        caches:
+            meta: doctrine_cache.providers.phpcr_meta
+            nodes: doctrine_cache.providers.phpcr_nodes
+
+        logging: true
+        profiling: true
+        parameters:
+            jackalope.check_login_on_server: false
+    phpcr_workspace: default
+    debug_toolbar:          true
+    debug_redirects:        false
+    use_assetic_controller: true
+    phpcr_user: admin
+    phpcr_pass: admin
+    users:
+        admin:
+            password: admin
+            roles: ROLE_SUPER_ADMIN

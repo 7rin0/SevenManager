@@ -1,0 +1,12 @@
+{% extends 'SonataAdminBundle:CRUD:base_edit.html.twig' %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/ckeditor/adapter/jquery.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/ckeditor/ckeditor.js') }}" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('textarea.ckeditor').ckeditor();
+        });
+    </script>
+{% endblock %}

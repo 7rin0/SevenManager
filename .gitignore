@@ -35,3 +35,26 @@
 
 # Composer PHAR
 /composer.phar
+
+#Custom
+/web/assetic
+/web/bundles/
+/web/js/
+/web/css/
+/app/bootstrap.php.cache
+/app/cache/*
+/app/config/parameters.yml
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+/app/phpunit.xml
+/build/
+/vendor/
+/bin/
+/composer.phar
+*.sqlite
+app/check.php
+app/SymfonyRequirements.php
+*.idea*
+/web/media/*
+

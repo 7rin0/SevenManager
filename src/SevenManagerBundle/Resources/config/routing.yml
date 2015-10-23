@@ -1,0 +1,12 @@
+seven_manager_pages_homepage:
+    path:     /seven-manager/content/{name}
+    defaults: { _controller: SevenManagerBundle:Default:homepage }
+
+# Fixtures
+seven_manager_fixtures_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: SevenManagerBundle:Default:index }
+
+seven_manager_fixtures_create_task:
+    path:     /create_task
+    defaults: { _controller: SevenManagerBundle:Default:create }

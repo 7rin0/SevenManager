@@ -1,0 +1,101 @@
+# In comment some examples of "How to apply" already in config.yml
+sonata_admin:
+    extensions:
+    templates:
+    dashboard:
+        blocks:
+            -
+              position: left
+              type: sonata.block.service.text
+              settings:
+                  content: >
+                      <h2>Welcome to Seven Manager</h2>
+                      <p>Be free to follow, use or help improve this structure totaly based in Symfony CMF!</p>
+                      <p>Fell free to play arround (documents, blocks, fixtures), add functionnalities and/or use
+                      Seven Manager Bundle as a kickstart to a new project.</p>
+        groups:
+            seven_manager_pages:
+              label: Pages Seven Manager
+              icon: '<i class="fa fa-plus-square"></i>'
+              items:
+                  - seven_manager.admin.pages.homepage
+                  - seven_manager.admin.pages.node
+                  - seven_manager.admin.pages.page
+                  - seven_manager.admin.pages.post
+                  - seven_manager.admin.pages.article
+                  - seven_manager.admin.pages.gallery
+                  - seven_manager.admin.pages.form
+
+            seven_manager_containers:
+                label: Containers Seven Manager
+                icon: '<i class="fa fa-plus-square"></i>'
+                items:
+                    - seven_manager.admin.containers.slideshow
+
+            seven_manager_blocks:
+                label: Blocks Seven Manager
+                icon: '<i class="fa fa-plus-square"></i>'
+                items:
+                    - seven_manager.admin.blocks.slideone
+
+# Cmf Routing Configuration
+cmf_routing:
+    chain:
+        routers_by_id:
+            cmf_routing.dynamic_router: 20
+            router.default: 100
+    dynamic:
+        route_collection_limit: 10
+        controllers_by_type:
+        controllers_by_class:
+        templates_by_class:
+            # Seven Manager Template by Class
+            SevenManagerBundle\Document\Pages\Homepage:  SevenManagerBundle:Page:homepage.html.twig
+            SevenManagerBundle\Document\Pages\Node:  SevenManagerBundle:Page:node.html.twig
+            SevenManagerBundle\Document\Pages\Article:  SevenManagerBundle:Page:article.html.twig
+            SevenManagerBundle\Document\Pages\Page:  SevenManagerBundle:Page:page.html.twig
+            SevenManagerBundle\Document\Pages\Post:  SevenManagerBundle:Page:post.html.twig
+            SevenManagerBundle\Document\Pages\Gallery:  SevenManagerBundle:Page:gallery.html.twig
+            SevenManagerBundle\Document\Pages\Form:  SevenManagerBundle:Page:form.html.twig
+
+# Custom Seven Manager Admin content
+sonata_doctrine_phpcr_admin:
+    document_tree:
+        # Seven Manager Allowed Document Trees
+        SevenManagerBundle\Document\Pages\Homepage:
+            valid_children:
+                - all
+        SevenManagerBundle\Document\Pages\Node:
+            valid_children:
+                - SevenManagerBundle\Document\Pages\Node
+        SevenManagerBundle\Document\Pages\Article:
+            valid_children:
+                - SevenManagerBundle\Document\Pages\Article
+        SevenManagerBundle\Document\Pages\Page:
+            valid_children:
+                - SevenManagerBundle\Document\Pages\Page
+        SevenManagerBundle\Document\Pages\Post:
+            valid_children:
+                - SevenManagerBundle\Document\Pages\Post
+        SevenManagerBundle\Document\Pages\Gallery:
+            valid_children:
+                - SevenManagerBundle\Document\Pages\Gallery
+        SevenManagerBundle\Document\Pages\Form:
+            valid_children:
+                - SevenManagerBundle\Document\Pages\Form
+        Doctrine\ODM\PHPCR\Document\Generic:
+            valid_children:
+                - all
+
+# SEO Configuration
+cmf_seo:
+    title: Seven Manager - %%content_title%%
+    description: The Content Management Framework powered by Symfony CMF. %%content_description%%
+    alternate_locale: ~
+
+sonata_seo:
+    page:
+        title: Seven Manager - %%content_title%%
+        metas:
+            name:
+                keywords: "CMF, Symfony, Routing, Content, PHPCR"

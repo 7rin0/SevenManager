@@ -1,0 +1,16 @@
+<VirtualHost *:80>
+	ServerName symfony.sonata
+	ServerAlias *.symfony.sonata
+
+	ErrorLog /your/root/Documents/github/logs/symfony-sonata_error.log
+	CustomLog /your/root/Documents/github/logs/symfony-sonata_access.log combined
+
+	DocumentRoot /your/root/Documents/github/projects/symfony-sonata/web
+	<Directory /your/root/Documents/github/projects/symfony-sonata/web>
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride all
+        Order allow,deny
+        allow from all
+        Require all granted
+	</Directory>
+</VirtualHost>
