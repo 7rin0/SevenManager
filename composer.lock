@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1af6d984003f3b6436cfabea451fd7cf",
-    "content-hash": "c5a06ff1a44108d538f44accd9b0ea2c",
+    "hash": "57508704e0e8c21eccb5127c24db2d6e",
+    "content-hash": "cde02bed026528c5a0f552b7d27715b4",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -3738,6 +3738,12 @@
                 "url": "https://github.com/sonata-project/SonataDatagridBundle.git",
                 "reference": "62eb30561331468514a9e36215922c55597f67bb"
             },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/SonataDatagridBundle/zipball/62eb30561331468514a9e36215922c55597f67bb",
+                "reference": "62eb30561331468514a9e36215922c55597f67bb",
+                "shasum": ""
+            },
             "require": {
                 "symfony/dependency-injection": "~2.3",
                 "symfony/form": "~2.3"
@@ -3758,18 +3764,19 @@
                     "Sonata\\DatagridBundle\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonataDatagridBundle/contributors"
+                },
+                {
                     "name": "Thomas Rabaix",
                     "email": "thomas.rabaix@sonata-project.org",
                     "homepage": "https://sonata-project.org"
-                },
-                {
-                    "name": "Sonata Community",
-                    "homepage": "https://github.com/sonata-project/SonataDatagridBundle/contributors"
                 }
             ],
             "description": "Symfony SonataDatagridBundle",

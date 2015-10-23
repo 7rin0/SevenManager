@@ -1,28 +1,24 @@
 {
-  "name": "luiseverino-com/symfony-sonata",
+  "name": "luiseverino-com/seven-manager-bundle",
+  "type": "symfony-bundle",
+  "keywords": ["seven-manager", "sonata", "symfony"],
+  "description": "Seven Manager - Bundle",
   "license": "MIT",
-  "type": "project",
-  "description": "Built on \"Symfony CMF Standard Edition\" architecture and infrastructure",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "Luis SEVERINO",
+      "email": "lfs.severino@gmail.com",
+      "homepage": "https://github.com/luiseverino-com"
+    }
+  ],
   "autoload": {
     "psr-0": {
       "": "src/",
       "Application": "app/"
     }
   },
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/sonata-project/SonataDatagridBundle.git",
-      "branch": "master"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/sonata-project/SonataPageBundle.git",
-      "branch": "master"
-    }
-  ],
-  "minimum-stability": "dev",
-  "prefer-stable": true,
   "require": {
     "php": ">=5.3.9",
     "symfony/symfony": "2.7.5 as 2.3.x-dev",
