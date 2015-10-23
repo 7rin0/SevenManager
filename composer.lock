@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "57508704e0e8c21eccb5127c24db2d6e",
-    "content-hash": "cde02bed026528c5a0f552b7d27715b4",
+    "hash": "678ae00a6492d43ae817439b5830def1",
+    "content-hash": "ef86599d5311577f7b33b30a1505c1ca",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -7075,7 +7075,9 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony-cmf/content-bundle": 20,
-        "sonata-project/markitup-bundle": 20
+        "sonata-project/markitup-bundle": 20,
+        "luiseverino-com/seven-manager-bundle": 20,
+        "sonata-project/exporter": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -1,4 +1,0 @@
-label: "Seven Manager - Page C"
-title: "Page C - Apply pages by yml files"
-body: |
-    <p>php app/console doctrine:phpcr:migrator:migrate page --identifier=/seven-manager/fixtures/pages_c</p>

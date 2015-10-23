@@ -1,4 +1,0 @@
-label: "Seven Manager - Page A"
-title: "Page A - This is a subpage of A"
-body: |
-    <p>php app/console doctrine:phpcr:migrator:migrate page --identifier=/seven-manager/fixtures/subpage_a/index</p>

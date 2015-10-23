@@ -75,7 +75,9 @@
     "jms/serializer-bundle": "~0.11|~1.0",
     "nelmio/api-doc-bundle": "~2.4",
     "cocur/slugify": "~1.0",
-    "sonata-project/markitup-bundle": "^2.1@dev"
+    "sonata-project/markitup-bundle": "^2.1@dev",
+    "luiseverino-com/seven-manager-bundle": "^1.1@dev",
+    "sonata-project/exporter": "^1.0@dev"
   },
   "require-dev": {
     "liip/functional-test-bundle": "~1.0",
