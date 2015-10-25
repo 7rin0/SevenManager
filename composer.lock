@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f0171f29772053a708e83d0fd78472ed",
-    "content-hash": "16e74b27e7de6b270269a19df91fd7bc",
+    "hash": "31a6b003f0d2b7393938431201de2308",
+    "content-hash": "40770132342fc79fde86dada544687ca",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -2680,6 +2680,57 @@
                 "Symfony2"
             ],
             "time": "2015-06-09 15:28:05"
+        },
+        {
+            "name": "luiseverino-com/seven-manager-bundle",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/luiseverino-com/SevenManagerBundle.git",
+                "reference": "bd1869fd2ee84d0945b40848fa827fe7e6ead4b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luiseverino-com/SevenManagerBundle/zipball/bd1869fd2ee84d0945b40848fa827fe7e6ead4b2",
+                "reference": "bd1869fd2ee84d0945b40848fa827fe7e6ead4b2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "sonata-project/admin-bundle": "^2.4@dev"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SevenManagerBundle\\": ""
+                },
+                "psr-0": {
+                    "SevenManager\\SevenManagerBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luis SEVERINO",
+                    "email": "lfs.severino@gmail.com",
+                    "homepage": "https://github.com/luiseverino-com"
+                }
+            ],
+            "description": "Seven Manager - Core Bundle",
+            "keywords": [
+                "seven-manager",
+                "sonata",
+                "symfony"
+            ],
+            "time": "2015-10-25 02:03:50"
         },
         {
             "name": "lunetics/locale-bundle",
@@ -7083,7 +7134,6 @@
     "stability-flags": {
         "symfony-cmf/content-bundle": 20,
         "sonata-project/markitup-bundle": 20,
-        "luiseverino-com/seven-manager-bundle": 20,
         "sonata-project/exporter": 20
     },
     "prefer-stable": true,

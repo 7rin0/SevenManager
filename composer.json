@@ -13,12 +13,6 @@
       "homepage": "https://github.com/luiseverino-com"
     }
   ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/luiseverino-com/SevenManagerBundle"
-    }
-  ],
   "autoload": {
     "psr-0": {
       "": "src/",
@@ -82,7 +76,7 @@
     "nelmio/api-doc-bundle": "~2.4",
     "cocur/slugify": "~1.0",
     "sonata-project/markitup-bundle": "^2.1@dev",
-    "luiseverino-com/seven-manager-bundle": "dev-master",
+    "luiseverino-com/seven-manager-bundle": "1.*",
     "sonata-project/exporter": "^1.0@dev"
   },
   "require-dev": {
