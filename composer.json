@@ -1,5 +1,5 @@
 {
-  "name": "luiseverino-com/seven-manager-bundle",
+  "name": "luiseverino-com/seven-manager",
   "type": "symfony-bundle",
   "keywords": ["seven-manager", "sonata", "symfony"],
   "description": "Seven Manager - Bundle",
@@ -11,6 +11,12 @@
       "name": "Luis SEVERINO",
       "email": "lfs.severino@gmail.com",
       "homepage": "https://github.com/luiseverino-com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/luiseverino-com/SevenManagerBundle"
     }
   ],
   "autoload": {
@@ -76,7 +82,7 @@
     "nelmio/api-doc-bundle": "~2.4",
     "cocur/slugify": "~1.0",
     "sonata-project/markitup-bundle": "^2.1@dev",
-    "luiseverino-com/seven-manager-bundle": "^1.1@dev",
+    "luiseverino-com/seven-manager-bundle": "dev-master",
     "sonata-project/exporter": "^1.0@dev"
   },
   "require-dev": {

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "678ae00a6492d43ae817439b5830def1",
-    "content-hash": "ef86599d5311577f7b33b30a1505c1ca",
+    "hash": "f0171f29772053a708e83d0fd78472ed",
+    "content-hash": "16e74b27e7de6b270269a19df91fd7bc",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -4540,7 +4540,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataPageBundle.git",
-                "reference": "904b90c7065cec598887c949ffb4d912a4bdb477"
+                "reference": "26a3f2be725511794e68b04f45419126dd64f23b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/SonataPageBundle/zipball/26a3f2be725511794e68b04f45419126dd64f23b",
+                "reference": "26a3f2be725511794e68b04f45419126dd64f23b",
+                "shasum": ""
             },
             "require": {
                 "friendsofsymfony/rest-bundle": "~1.1",
@@ -4575,6 +4581,7 @@
                     "Sonata\\PageBundle\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
