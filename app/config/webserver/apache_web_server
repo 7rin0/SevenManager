@@ -1,12 +1,12 @@
 <VirtualHost *:80>
-	ServerName symfony.sonata
-	ServerAlias *.symfony.sonata
+	ServerName seven-manager.sonata
+	ServerAlias *.seven-manager.sonata
 
-	ErrorLog /your/root/Documents/github/logs/symfony-sonata_error.log
-	CustomLog /your/root/Documents/github/logs/symfony-sonata_access.log combined
+	ErrorLog /your/root/Documents/github/logs/seven_manager_error.log
+	CustomLog /your/root/Documents/github/logs/seven_manager_access.log combined
 
-	DocumentRoot /your/root/Documents/github/projects/symfony-sonata/web
-	<Directory /your/root/Documents/github/projects/symfony-sonata/web>
+	DocumentRoot /your/root/Documents/github/projects/seven_manager/web
+	<Directory /your/root/Documents/github/projects/seven_manager/web>
         Options Indexes FollowSymLinks MultiViews
         AllowOverride all
         Order allow,deny

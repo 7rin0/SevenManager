@@ -3,7 +3,7 @@ parameters:
     database_driver: pdo_mysql
     database_host: localhost
     database_port: null
-    database_name: symfony_sonata
+    database_name: seven_manager
     database_user: root
     database_password: ~
     database_path: null

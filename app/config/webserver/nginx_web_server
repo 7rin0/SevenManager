@@ -3,12 +3,12 @@ server {
     listen 80;
     listen 443 ssl;
 
-    server_name symfony.sonata;
-    root /your/root/Documents/github/projects/symfony-sonata/web;
+    server_name seven-manager.sonata *.seven-manager.sonata ;
+    root /your/root/Documents/github/projects/SevenManager/web;
 
     #ssl on;
-    #ssl_certificate /your/root/Documents/github/symfony-sonata/ssl/cacert.pem;
-    #ssl_certificate_key /your/root/Documents/github/symfony-sonata/privkey.pem;
+    #ssl_certificate /your/root/Documents/github/SevenManager/ssl/cacert.pem;
+    #ssl_certificate_key /your/root/Documents/github/SevenManager/privkey.pem;
 
     location / {
         # try to serve file directly, fallback to app.php
@@ -35,6 +35,6 @@ server {
         fastcgi_max_temp_file_size 0;
     }
 
-    error_log /your/root/Documents/github/logs/symfony_sonata_errors.log warn;
-    access_log /your/root/Documents/github/logs/symfony_sonata_access.log;
+    error_log /your/root/Documents/github/logs/seven_manager_errors.log warn;
+    access_log /your/root/Documents/github/logs/seven_manager_access.log;
 }
