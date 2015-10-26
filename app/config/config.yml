@@ -376,16 +376,24 @@ liip_imagine:
                 thumbnail: { size: [50, 50], mode: outbound }
 
 fm_elfinder:
-    locale: %locale%
-    editor: ckeditor
-    connector:
-        roots:
-            media:
-                driver: cmf_media.adapter.elfinder.phpcr_driver
-                #path: %cmf_media.persistence.phpcr.media_basepath%
-                path: %kernel.root_dir%/../web/uploads/media
-                upload_allow: ['all']
-                upload_max_size: 5M
+    instances:
+        default:
+            locale: %locale% # defaults to current request locale
+            editor: ckeditor # other options are tinymce, tinymce4, form, custom and simple
+            fullscreen: true # defaults true, applies to simple and ckeditor editors
+            theme: smoothness # jquery theme
+            include_assets: true # disable if you want to handle loading of the javascript and css assets yourself
+            connector:
+                debug: false # defaults to false
+                roots:       # at least one root must be defined
+                    uploads:
+                        show_hidden: false # defaults to false
+                        driver: LocalFileSystem
+                        path: uploads
+                        upload_allow: ['all']
+                        #upload_allow: ['image/png', 'image/jpg', 'image/jpeg']
+                        #upload_deny: ['all']
+                        upload_max_size: 5M
 
 sonata_media:
     providers:
@@ -424,9 +432,9 @@ jms_serializer:
     metadata:
         auto_detection: true
         directories:
-            CmfContentBundle:
-                namespace_prefix: "Symfony\Cmf\Bundle\ContentBundle"
-                path: "@AppBundle/Resources/config/serializer/cmf"
+            #CmfContentBundle:
+            #    namespace_prefix: "Symfony\Cmf\Bundle\ContentBundle"
+            #    path: "@AppBundle/Resources/config/serializer/cmf"
 
 fos_rest:
     view:

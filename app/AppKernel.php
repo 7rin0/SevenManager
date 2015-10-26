@@ -21,60 +21,64 @@ class AppKernel extends Kernel
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-            new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
 
             // "Symfony" CMF Bundles
             new Symfony\Cmf\Bundle\CoreBundle\CmfCoreBundle(),
             new Symfony\Cmf\Bundle\MenuBundle\CmfMenuBundle(),
             new Symfony\Cmf\Bundle\ContentBundle\CmfContentBundle(),
-            new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
-            new Symfony\Cmf\Bundle\SimpleCmsBundle\CmfSimpleCmsBundle(),
-            new Symfony\Cmf\Bundle\SeoBundle\CmfSeoBundle(),
-            new Symfony\Cmf\Bundle\SearchBundle\CmfSearchBundle(),
             new Symfony\Cmf\Bundle\MediaBundle\CmfMediaBundle(),
-            new Symfony\Cmf\Bundle\RoutingAutoBundle\CmfRoutingAutoBundle(),
             new Symfony\Cmf\Bundle\CreateBundle\CmfCreateBundle(),
             new Symfony\Cmf\Bundle\TreeBrowserBundle\CmfTreeBrowserBundle(),
             new Symfony\Cmf\Bundle\BlockBundle\CmfBlockBundle(),
+            new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
+            new Symfony\Cmf\Bundle\RoutingAutoBundle\CmfRoutingAutoBundle(),
+            new Symfony\Cmf\Bundle\SearchBundle\CmfSearchBundle(),
+            new Symfony\Cmf\Bundle\SeoBundle\CmfSeoBundle(),
+            new Symfony\Cmf\Bundle\SimpleCmsBundle\CmfSimpleCmsBundle(),
 
             // "Sonata" Bundles
             new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\jQueryBundle\SonatajQueryBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
-            new Sonata\SeoBundle\SonataSeoBundle(),
-            new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
-            new Sonata\CacheBundle\SonataCacheBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new Sonata\DoctrinePHPCRAdminBundle\SonataDoctrinePHPCRAdminBundle(),
+            new Sonata\IntlBundle\SonataIntlBundle(),
+            new Sonata\FormatterBundle\SonataFormatterBundle(),
+            new Sonata\SeoBundle\SonataSeoBundle(),
+            new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Sonata\DatagridBundle\SonataDatagridBundle(),
             new Sonata\NotificationBundle\SonataNotificationBundle(),
-            new Sonata\FormatterBundle\SonataFormatterBundle(),
             new Sonata\MediaBundle\SonataMediaBundle(),
-            new Sonata\IntlBundle\SonataIntlBundle(),
-            new Sonata\MarkItUpBundle\SonataMarkItUpBundle(),
-            # new Sonata\PageBundle\SonataPageBundle(),
-            # new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
 
             // Misc Bundles
-            # new FOS\UserBundle\FOSUserBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
             new Liip\SearchBundle\LiipSearchBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
-            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-            new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
-            new JMS\SerializerBundle\JMSSerializerBundle(),
-            new Eko\FeedBundle\EkoFeedBundle(),
+            new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
             new FM\ElfinderBundle\FMElfinderBundle(),
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
-            new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
+            new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
+            new Eko\FeedBundle\EkoFeedBundle(),
             new Burgov\Bundle\KeyValueFormBundle\BurgovKeyValueFormBundle(),
 
             // Custom Bundles
             new AppBundle\AppBundle(),
             new SevenManagerBundle\SevenManagerBundle()
+
+            /**
+             * new Sonata\CacheBundle\SonataCacheBundle(),
+             * new Sonata\MarkItUpBundle\SonataMarkItUpBundle(),
+             * new Sonata\PageBundle\SonataPageBundle(),
+             * new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
+             * new FOS\UserBundle\FOSUserBundle(),
+             *
+             **/
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
