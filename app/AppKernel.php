@@ -52,6 +52,7 @@ class AppKernel extends Kernel
             new Sonata\DatagridBundle\SonataDatagridBundle(),
             new Sonata\NotificationBundle\SonataNotificationBundle(),
             new Sonata\MediaBundle\SonataMediaBundle(),
+            new Sonata\CacheBundle\SonataCacheBundle(),
 
             // Misc Bundles
             new FOS\RestBundle\FOSRestBundle(),
@@ -72,7 +73,6 @@ class AppKernel extends Kernel
             new SevenManagerBundle\SevenManagerBundle()
 
             /**
-             * new Sonata\CacheBundle\SonataCacheBundle(),
              * new Sonata\MarkItUpBundle\SonataMarkItUpBundle(),
              * new Sonata\PageBundle\SonataPageBundle(),
              * new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
