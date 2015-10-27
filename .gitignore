@@ -25,6 +25,7 @@
 # Assets and user uploads
 /web/bundles/
 /web/uploads/
+/components/*
 
 # PHPUnit
 /app/phpunit.xml
@@ -35,6 +36,7 @@
 
 # Composer PHAR
 /composer.phar
+composer.lock
 
 #Custom
 /web/assetic
