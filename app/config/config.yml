@@ -441,6 +441,22 @@ fos_rest:
         formats:
             json: true
 
+fos_user:
+    db_driver:        orm # can be orm or mongodb (support is also available within FOSUser for couchdb, propel but none is given for SonataUserBundle)
+    firewall_name:    main
+    user_class:       Sonata\UserBundle\Entity\BaseUser
+
+    group:
+        group_class:  Sonata\UserBundle\Entity\BaseGroup
+
+    profile:
+        # Authentication Form
+        form:
+            type:               fos_user_profile
+            handler:            fos_user.profile.form.handler.default
+            name:               fos_user_profile_form
+            validation_groups:  [Authentication] # Please note : this is not the default value
+
 # Swiftmailer Configuration
 swiftmailer:
     transport: "%mailer_transport%"

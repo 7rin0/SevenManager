@@ -53,8 +53,11 @@ class AppKernel extends Kernel
             new Sonata\NotificationBundle\SonataNotificationBundle(),
             new Sonata\MediaBundle\SonataMediaBundle(),
             new Sonata\CacheBundle\SonataCacheBundle(),
+            new Sonata\MarkItUpBundle\SonataMarkItUpBundle(),
+            new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
 
             // Misc Bundles
+            new FOS\UserBundle\FOSUserBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
@@ -71,14 +74,6 @@ class AppKernel extends Kernel
             // Custom Bundles
             new AppBundle\AppBundle(),
             new SevenManagerBundle\SevenManagerBundle()
-
-            /**
-             * new Sonata\MarkItUpBundle\SonataMarkItUpBundle(),
-             * new Sonata\PageBundle\SonataPageBundle(),
-             * new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
-             * new FOS\UserBundle\FOSUserBundle(),
-             *
-             **/
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
