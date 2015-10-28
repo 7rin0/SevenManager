@@ -1,5 +1,8 @@
 {
-  "name": "luiseverino-com/seven-manager",
+  "name": "7rin0/seven-manager",
+  "replace": {
+    "luiseverino-com/seven-manager": "self.version"
+  },
   "type": "symfony-bundle",
   "keywords": ["seven-manager", "sonata", "symfony"],
   "description": "Seven Manager - Bundle",
@@ -10,7 +13,7 @@
     {
       "name": "Luis SEVERINO",
       "email": "lfs.severino@gmail.com",
-      "homepage": "https://github.com/luiseverino-com"
+      "homepage": "https://github.com/7rin0"
     }
   ],
   "autoload": {
