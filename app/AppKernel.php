@@ -73,7 +73,9 @@ class AppKernel extends Kernel
 
             // Custom Bundles
             new AppBundle\AppBundle(),
-            new SevenManagerBundle\SevenManagerBundle()
+            new SevenManagerBundle\SevenManagerBundle(),
+            new Application\Sonata\MediaBundle\ApplicationSonataMediaBundle(),
+            new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
