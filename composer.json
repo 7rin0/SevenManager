@@ -58,7 +58,11 @@
     "burgov/key-value-form-bundle": "1.2.0",
     "incenteev/composer-parameter-handler": "2.1.1",
     "sonata-project/markitup-bundle": "^2.1@dev",
-    "wjzijderveld/check-bundles": "^2.0@dev"
+    "wjzijderveld/check-bundles": "^2.0@dev",
+    "doctrine/doctrine-migrations-bundle": "~1.1"
+  },
+  "provide": {
+    "phpcr/phpcr-implementation": "2.1.0"
   },
   "scripts": {
     "post-root-package-install": [
