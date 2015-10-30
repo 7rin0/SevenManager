@@ -1,10 +1,5 @@
 # Built on Symfony CMF Standard Edition architecture and infrastructure
 
-The Symfony CMF Standard Edition (SE) is a distribution of the
-[Symfony Content Management Framework (CMF)](http://cmf.symfony.com/)
-and licensed under the [MIT License](LICENSE).
-
-
 ## Requirements
 
 * composer
@@ -64,19 +59,6 @@ Run in Terminal (CTRL+ALT+T) in symfony-sonata project's root dir.
 #### Block's documentation
  - http://symfony.com/doc/current/cmf/bundles/block/index.html  
  - https://sonata-project.org/bundles/block/master/doc/index.html
-
-#### PHPStorm Plugins - Symfony 2 
- - http://plugins.jetbrains.com/plugin/7320
- - http://plugins.jetbrains.com/plugin/7219
-
-
-## Doing ...
-
-### Content types
-* Add export content actions
-* Trad sonata_type_collection
-* Create "Collections of collections"
-* Select Block childs in a content type
 
 ## Contributing
 Thanks to
