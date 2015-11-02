@@ -14,6 +14,12 @@ sonata_admin:
                       <p>Fell free to play arround (documents, blocks, fixtures), add functionnalities and/or use
                       Seven Manager Bundle as a kickstart to a new project.</p>
         groups:
+            seven_manager_boilerplate:
+              label: Labs Seven Manager
+              icon: '<i class="fa fa-plus-square"></i>'
+              items:
+                  - seven_manager.admin.pages.boilerplate
+
             seven_manager_pages:
               label: Pages Seven Manager
               icon: '<i class="fa fa-plus-square"></i>'
@@ -50,6 +56,7 @@ cmf_routing:
         controllers_by_class:
         templates_by_class:
             # Seven Manager Template by Class
+            SevenManagerBundle\Document\Pages\Boilerplate:  SevenManagerBundle:Page:boilerplate.html.twig
             SevenManagerBundle\Document\Pages\Homepage:  SevenManagerBundle:Page:homepage.html.twig
             SevenManagerBundle\Document\Pages\Node:  SevenManagerBundle:Page:node.html.twig
             SevenManagerBundle\Document\Pages\Article:  SevenManagerBundle:Page:article.html.twig
@@ -62,6 +69,9 @@ cmf_routing:
 sonata_doctrine_phpcr_admin:
     document_tree:
         # Seven Manager Allowed Document Trees
+        SevenManagerBundle\Document\Pages\Boilerplate:
+            valid_children:
+                - all
         SevenManagerBundle\Document\Pages\Homepage:
             valid_children:
                 - all
