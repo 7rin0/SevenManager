@@ -34,13 +34,13 @@ sonata_admin:
 
             seven_manager_containers:
                 label: Containers Seven Manager
-                icon: '<i class="fa fa-plus-square"></i>'
+                icon: '<i class="fa fa-archive"></i>'
                 items:
                     - seven_manager.admin.containers.slideshow
 
             seven_manager_blocks:
                 label: Blocks Seven Manager
-                icon: '<i class="fa fa-plus-square"></i>'
+                icon: '<i class="fa fa-picture-o"></i>'
                 items:
                     - seven_manager.admin.blocks.slideone
 
