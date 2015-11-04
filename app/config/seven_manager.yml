@@ -43,6 +43,7 @@ sonata_admin:
                 icon: '<i class="fa fa-plus-square"></i>'
                 items:
                     - seven_manager.admin.blocks.slideone
+                    - seven_manager.admin.blocks.textone
 
 # Cmf Routing Configuration
 cmf_routing:
