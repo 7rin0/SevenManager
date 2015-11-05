@@ -1,0 +1,106 @@
+# The LiipImagineBundle can be used if you want to convert on demand an image
+# to a specific format. (ie a controller render the file)
+# more information can be found here : https://github.com/liip/LiipImagineBundle
+liip_search:
+    restrict_by_language: true;
+
+liip_imagine:
+    loaders:
+        default:
+          filesystem:
+            data_root: %kernel.root_dir%/../web/uploads/media
+
+    filter_sets:
+        # define the filter to be used with the image preview
+        image_upload_thumbnail:
+            data_loader: cmf_media_doctrine_phpcr
+            filters:
+                thumbnail: { size: [100, 100], mode: outbound }
+
+        # default filter to be used for elfinder thumbnails
+        elfinder_thumbnail:
+            data_loader: cmf_media_doctrine_phpcr
+            quality: 85
+            filters:
+                thumbnail: { size: [48, 48], mode: inset }
+
+        cmf_block:
+            data_loader: cmf_media_doctrine_phpcr
+            quality: 85
+            filters:
+                thumbnail: { size: [50, 50], mode: outbound }
+
+fm_elfinder:
+    instances:
+        default:
+            locale: %locale% # defaults to current request locale
+            editor: ckeditor # other options are tinymce, tinymce4, form, custom and simple
+            fullscreen: true # defaults true, applies to simple and ckeditor editors
+            theme: smoothness # jquery theme
+            include_assets: true # disable if you want to handle loading of the javascript and css assets yourself
+            connector:
+                debug: false # defaults to false
+                roots:       # at least one root must be defined
+                    uploads:
+                        show_hidden: false # defaults to false
+                        driver: LocalFileSystem
+                        path: uploads
+                        upload_allow: ['all']
+                        #upload_allow: ['image/png', 'image/jpg', 'image/jpeg']
+                        #upload_deny: ['all']
+                        upload_max_size: 5M
+
+lunetics_locale:
+    strict_mode: true
+    guessing_order:
+        - router
+        - cookie
+        - browser
+    allowed_locales: %locales%
+
+jms_serializer:
+    metadata:
+        auto_detection: true
+        directories:
+            #CmfContentBundle:
+            #    namespace_prefix: "Symfony\Cmf\Bundle\ContentBundle"
+            #    path: "@AppBundle/Resources/config/serializer/cmf"
+
+fos_rest:
+    view:
+        formats:
+            json: true
+
+fos_user:
+    db_driver:        orm # can be orm or mongodb (support is also available within FOSUser for couchdb, propel but none is given for SonataUserBundle)
+    firewall_name:    main
+    user_class:       Application\Sonata\UserBundle\Entity\User
+
+    group:
+        group_class:  Application\Sonata\UserBundle\Entity\Group
+
+    profile:
+        # Authentication Form
+        form:
+            type:               fos_user_profile
+            handler:            fos_user.profile.form.handler.default
+            name:               fos_user_profile_form
+            validation_groups:  [Authentication] # Please note : this is not the default value
+
+ivory_ck_editor:
+    default_config: default
+    configs:
+        default:
+            filebrowserBrowseRoute: admin_sonata_media_media_ckeditor_browser
+            filebrowserImageBrowseRoute: admin_sonata_media_media_ckeditor_browser
+            # Display images by default when clicking the image dialog browse button
+            filebrowserImageBrowseRouteParameters:
+                provider: sonata.media.provider.image
+            filebrowserUploadRoute: admin_sonata_media_media_ckeditor_upload
+            filebrowserUploadRouteParameters:
+                provider: sonata.media.provider.file
+            # Upload file as image when sending a file from the image dialog
+            filebrowserImageUploadRoute: admin_sonata_media_media_ckeditor_upload
+            filebrowserImageUploadRouteParameters:
+                provider: sonata.media.provider.image
+                context: my-context # Optional, to upload in a custom context

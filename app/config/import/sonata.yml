@@ -1,0 +1,210 @@
+# Sonata Core Configuration
+sonata_core:
+    form_type: horizontal
+
+# Admin
+sonata_admin:
+    extensions:
+        cmf_core.admin_extension.child:
+            implements:
+                - Symfony\Cmf\Bundle\CoreBundle\Model\ChildInterface
+        cmf_core.admin_extension.publish_workflow.time_period:
+            implements:
+                - Symfony\Cmf\Bundle\CoreBundle\PublishWorkflow\PublishTimePeriodInterface
+        cmf_core.admin_extension.publish_workflow.publishable:
+            implements:
+                - Symfony\Cmf\Bundle\CoreBundle\PublishWorkflow\PublishableInterface
+        cmf_core.admin_extension.translatable:
+            implements:
+                - Symfony\Cmf\Bundle\CoreBundle\Translatable\TranslatableInterface
+        cmf_menu.admin_extension.menu_node_referrers:
+            implements:
+                - Symfony\Cmf\Bundle\MenuBundle\Model\MenuNodeReferrersInterface
+        cmf_routing.admin_extension.route_referrers:
+            implements:
+                - Symfony\Cmf\Component\Routing\RouteReferrersInterface
+        cmf_routing.admin_extension.frontend_link:
+            implements:
+                - Symfony\Cmf\Component\Routing\RouteReferrersReadInterface
+            extends:
+                - Symfony\Component\Routing\Route
+        cmf_seo.admin_extension:
+            implements:
+                - Symfony\Cmf\Bundle\SeoBundle\SeoAwareInterface
+    templates:
+        layout:                         SevenManagerBundle:Admin:layout.html.twig
+        #user_block:                    SonataAdminBundle:Core:user_block.html.twig
+        user_block:                     admin/user_block.html.twig
+        ajax:                           SonataAdminBundle::ajax_layout.html.twig
+        list:                           SonataAdminBundle:CRUD:list.html.twig
+        show:                           SonataAdminBundle:CRUD:show.html.twig
+        show_compare:                   SonataAdminBundle:CRUD:show_compare.html.twig
+        edit:                           SonataAdminBundle:CRUD:edit.html.twig
+        history:                        SonataAdminBundle:CRUD:history.html.twig
+        preview:                        SonataAdminBundle:CRUD:preview.html.twig
+        delete:                         SonataAdminBundle:CRUD:delete.html.twig
+        batch:                          SonataAdminBundle:CRUD:list__batch.html.twig
+        acl:                            SonataAdminBundle:CRUD:acl.html.twig
+        action:                         SonataAdminBundle:CRUD:action.html.twig
+        select:                         SonataAdminBundle:CRUD:list__select.html.twig
+        filter:                         SonataAdminBundle:Form:filter_admin_fields.html.twig
+        dashboard:                      SonataAdminBundle:Core:dashboard.html.twig
+        search:                         SonataAdminBundle:Core:search.html.twig
+        batch_confirmation:             SonataAdminBundle:CRUD:batch_confirmation.html.twig
+        inner_list_row:                 SonataAdminBundle:CRUD:list_inner_row.html.twig
+        base_list_field:                SonataAdminBundle:CRUD:base_list_field.html.twig
+        list_block:                     SonataAdminBundle:Block:block_admin_list.html.twig
+        add_block:                      SonataAdminBundle:Core:add_block.html.twig
+        pager_links:                    SonataAdminBundle:Pager:links.html.twig
+        pager_results:                  SonataAdminBundle:Pager:results.html.twig
+        tab_menu_template:              SonataAdminBundle:Core:tab_menu_template.html.twig
+        history_revision_timestamp:     SonataAdminBundle:CRUD:history_revision_timestamp.html.twig
+        short_object_description:       SonataAdminBundle:Helper:short-object-description.html.twig
+        search_result_block:            SonataAdminBundle:Block:block_search_result.html.twig
+    dashboard:
+        blocks:
+            - { position: left, type: sonata_admin_doctrine_phpcr.tree_block }
+            - { position: right, type: sonata.admin.block.admin_list }
+        groups:
+            content:
+                label: Blocks
+                icon: '<i class="fa fa-file-text-o"></i>'
+                items:
+                    - cmf_content.admin
+                    - cmf_block.simple_admin
+                    - cmf_block.container_admin
+                    - cmf_block.reference_admin
+                    - cmf_block.action_admin
+                    - cmf_block.imagine.slideshow_admin
+                    - cmf_block.imagine.imagine_admin
+                    - cmf_simple_cms.persistence.phpcr.admin.page
+            routing:
+                label: Menu & URLs
+                icon: '<i class="fa fa-link"></i>'
+                items:
+                    - cmf_menu.menu_admin
+                    - cmf_menu.node_admin
+                    - cmf_routing.route_admin
+                    - cmf_routing.redirect_route_admin
+    assets:
+        javascripts:
+            - bundles/sonataadmin/vendor/jquery/dist/jquery.min.js
+            - bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.js
+            - bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js
+            - bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js
+            - bundles/sonatapage/sonata-page.back.min.js
+        stylesheets:
+            - bundles/sonataadmin/vendor/AdminLTE/css/font-awesome.min.css
+            - bundles/sonataadmin/vendor/jqueryui/themes/flick/jquery-ui.min.css
+            - bundles/sonatapage/sonata-page.back.min.css
+
+# Block
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts:   [admin]
+        sonata.admin.block.search_result:
+            contexts:   [admin]
+        sonata_admin_doctrine_phpcr.tree_block:
+            settings:
+                id: '/seven-manager'
+            contexts:   [admin]
+        sonata.admin.content_types:
+            contexts:   [admin]
+        sonata.block.service.text:
+            contexts:   [admin]
+        sonata.block.service.rss:
+            contexts:   [admin]
+        # Some specific block from the SonataMediaBundle
+        sonata.media.block.media:
+             contexts:   [admin]
+        sonata.media.block.galery:
+             contexts:   [admin]
+        sonata.media.block.feature_media:
+             contexts:   [admin]
+    blocks_by_class:
+        Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\RssBlock:
+            cache: cmf.block.cache.js_async
+
+# Media
+sonata_media:
+    providers:
+            image:
+                resizer: sonata.media.resizer.square
+    # if you don't use default namespace configuration
+    #class:
+    #    media: MyVendor\MediaBundle\Entity\Media
+    #    gallery: MyVendor\MediaBundle\Entity\Gallery
+    #    gallery_has_media: MyVendor\MediaBundle\Entity\GalleryHasMedia
+    db_driver: doctrine_orm # or doctrine_mongodb, doctrine_phpcr it is mandatory to choose one here
+    default_context: default # you need to set a context
+    contexts:
+        default:  # the default context is mandatory
+            providers:
+                - sonata.media.provider.dailymotion
+                - sonata.media.provider.youtube
+                - sonata.media.provider.image
+                - sonata.media.provider.file
+                - sonata.media.provider.vimeo
+            formats:
+                small: { width: 100 , quality: 70}
+                big:   { width: 500 , quality: 70}
+    cdn:
+        server:
+            path: /uploads/media
+    filesystem:
+        local:
+            directory:  %kernel.root_dir%/../web/uploads/media
+            create:     true
+
+# Timezone
+sonata_intl:
+    timezone:
+        detectors:
+                    #- sonata.intl.timezone_detector.user
+                    - sonata.intl.timezone_detector.locale
+        locales:
+            fr:    Europe/Paris
+            en:    Europe/London
+
+# Formater
+sonata_formatter:
+    formatters:
+        markdown:
+            service: sonata.formatter.text.markdown
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+                - sonata.media.formatter.twig
+        text:
+            service: sonata.formatter.text.text
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+                - sonata.media.formatter.twig
+        rawhtml:
+            service: sonata.formatter.text.raw
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+                - sonata.media.formatter.twig
+        richhtml:
+            service: sonata.formatter.text.raw
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+                - sonata.media.formatter.twig
+        twig:
+            service: sonata.formatter.text.twigengine
+            extensions: [] # Twig formatter cannot have extensions
+    ckeditor:
+        templates:
+            browser: 'SonataFormatterBundle:Ckeditor:browser.html.twig'
+            upload: 'SonataFormatterBundle:Ckeditor:upload.html.twig'
+
+# Notification
+sonata_notification:
+    backend: sonata.notification.backend.runtime
+    admin:
+        enabled: false

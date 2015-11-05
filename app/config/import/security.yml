@@ -19,12 +19,6 @@ security:
         main:
             pattern: ^/
             anonymous: ~
-            #logout:
-            #    path:   /demo/logout
-            #    target: /
-            #form_login:
-            #    login_path: /demo/login
-            #    check_path: /demo/login_check
             http_basic:
                 realm: "Secured Demo Area (username: admin, password: admin)"
 

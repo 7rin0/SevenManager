@@ -1,0 +1,31 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: localhost
+    database_port: null
+    database_name: seven_manager
+    database_user: root
+    database_password: Sempre$
+    database_path: null
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    locale: en
+    secret: ThisTokenIsNotSoSecretChangeIt
+    locales:
+        - en
+        - fr
+        - de
+    coffee.extension: \.coffee-disabled$
+    coffee.bin: ''
+    coffee.node: ''
+    security_users:
+        user:
+            password: user
+            roles:
+                - ROLE_USER
+        admin:
+            password: admin
+            roles:
+                - ROLE_ADMIN

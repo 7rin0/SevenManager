@@ -45,7 +45,11 @@ sonata_admin:
                     - seven_manager.admin.blocks.slideone
                     - seven_manager.admin.blocks.textone
 
-# Cmf Routing Configuration
+cmf_routing_auto:
+    persistence:
+        phpcr:
+            enabled: true
+
 cmf_routing:
     chain:
         routers_by_id:
@@ -55,6 +59,9 @@ cmf_routing:
         route_collection_limit: 10
         controllers_by_type:
         controllers_by_class:
+        persistence:
+            phpcr:
+                route_basepath: /seven-manager/routes
         templates_by_class:
             # Seven Manager Template by Class
             SevenManagerBundle\Document\Pages\Boilerplate:  SevenManagerBundle:Page:boilerplate.html.twig
