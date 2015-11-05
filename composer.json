@@ -97,7 +97,8 @@
     "quick-start": "SevenManagerBundle\\Composer\\ComposerSevenManager::quickStart"
   },
   "config": {
-    "bin-dir": "bin"
+    "bin-dir": "bin",
+    "component-dir": "web/assets"
   },
   "extra": {
     "symfony-app-dir": "app",
