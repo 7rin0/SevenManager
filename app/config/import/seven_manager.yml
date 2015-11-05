@@ -61,7 +61,7 @@ cmf_routing:
         controllers_by_class:
         persistence:
             phpcr:
-                route_basepath: /seven-manager/routes
+                route_basepath: seven-manager
         templates_by_class:
             # Seven Manager Template by Class
             SevenManagerBundle\Document\Pages\Boilerplate:  SevenManagerBundle:Page:boilerplate.html.twig
