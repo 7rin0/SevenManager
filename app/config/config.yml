@@ -1,7 +1,7 @@
 # Import Services and Parametres
 imports:
+    - { resource: parameters.yml }
     - { resource: import/seven_manager.yml }
-    - { resource: import/parameters.yml }
     - { resource: import/doctrine.yml }
     - { resource: import/security.yml }
     - { resource: import/services.yml }
