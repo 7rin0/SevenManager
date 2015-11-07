@@ -59,6 +59,15 @@ cmf_routing:
         route_collection_limit: 10
         controllers_by_type:
         controllers_by_class:
+            # Seven Manager Template by Class
+            SevenManagerBundle\Document\Pages\Boilerplate:  SevenManagerBundle\Controller\DefaultController::indexAction
+            SevenManagerBundle\Document\Pages\Homepage:  SevenManagerBundle\Controller\HomepageController::indexAction
+            SevenManagerBundle\Document\Pages\Node:  SevenManagerBundle\Controller\DefaultController::indexAction
+            SevenManagerBundle\Document\Pages\Article:  SevenManagerBundle\Controller\ArticleController::indexAction
+            SevenManagerBundle\Document\Pages\Page:  SevenManagerBundle\Controller\DefaultController::indexAction
+            SevenManagerBundle\Document\Pages\Post:  SevenManagerBundle\Controller\DefaultController::indexAction
+            SevenManagerBundle\Document\Pages\Gallery:  SevenManagerBundle\Controller\DefaultController::indexAction
+            SevenManagerBundle\Document\Pages\Form:  SevenManagerBundle\Controller\DefaultController::indexAction
         persistence:
             phpcr:
                 route_basepath: seven-manager
