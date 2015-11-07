@@ -22,6 +22,9 @@ set_permissions:
 	sudo chmod -fR 777 app web
 
 update_phpcr:
-	app/console doctrine:phpcr:nodes:update --query="SELECT * FROM nt:file" -n
-	app/console doctrine:phpcr:nodes:update --query="SELECT * FROM nt:folder" -n
-	app/console doctrine:phpcr:nodes:update --query="SELECT * FROM nt:resource" -n
+	php app/console doctrine:phpcr:nodes:update --query="SELECT * FROM nt:file" -n
+	php app/console doctrine:phpcr:nodes:update --query="SELECT * FROM nt:folder" -n
+	php app/console doctrine:phpcr:nodes:update --query="SELECT * FROM nt:resource" -n
+
+export_dabase:
+	php app/console doctrine:phpcr:workspace:export --path / ./seven_manager.xml

@@ -30,12 +30,16 @@ Run in Terminal (CTRL+ALT+T) in symfony-sonata project's root dir.
 - php app/console doctrine:phpcr:init:dbal
 - php app/console doctrine:phpcr:repository:init
 - php app/console doctrine:phpcr:fixtures:load
+- php app/console assets:install
+- php app/console assetic:dump
  
 ### Option 3 - Using the existing Makefile
-- make install-requirements
-- make install-vendors
-- make install-structure
-- make set-permissions
+- make get_requirements
+- make get_vendors
+- make init_database
+- make load_fixtures (purge database and load fixtures)
+- make generate_assets
+- make set_permissions
   
 ## Set permissions
  - chmod -R 777 app web
