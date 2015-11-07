@@ -5,7 +5,7 @@
   },
   "type": "project",
   "keywords": ["seven-manager", "sonata", "symfony"],
-  "description": "Seven Manager - Bundle",
+  "description": "Seven Manager",
   "license": "MIT",
   "minimum-stability": "dev",
   "prefer-stable": true,
