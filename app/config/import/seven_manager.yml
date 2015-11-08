@@ -94,22 +94,22 @@ sonata_doctrine_phpcr_admin:
                 - all
         SevenManagerBundle\Document\Pages\Node:
             valid_children:
-                - SevenManagerBundle\Document\Pages\Node
+                - all
         SevenManagerBundle\Document\Pages\Article:
             valid_children:
-                - SevenManagerBundle\Document\Pages\Article
+                - all
         SevenManagerBundle\Document\Pages\Page:
             valid_children:
-                - SevenManagerBundle\Document\Pages\Page
+                - all
         SevenManagerBundle\Document\Pages\Post:
             valid_children:
-                - SevenManagerBundle\Document\Pages\Post
+                - all
         SevenManagerBundle\Document\Pages\Gallery:
             valid_children:
-                - SevenManagerBundle\Document\Pages\Gallery
+                - all
         SevenManagerBundle\Document\Pages\Form:
             valid_children:
-                - SevenManagerBundle\Document\Pages\Form
+                - all
         Doctrine\ODM\PHPCR\Document\Generic:
             valid_children:
                 - all

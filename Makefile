@@ -25,6 +25,7 @@ update_phpcr:
 	php app/console doctrine:phpcr:nodes:update --query="SELECT * FROM nt:file" -n
 	php app/console doctrine:phpcr:nodes:update --query="SELECT * FROM nt:folder" -n
 	php app/console doctrine:phpcr:nodes:update --query="SELECT * FROM nt:resource" -n
+	php app/console doctrine:schema:update --force
 
 export_dabase:
 	php app/console doctrine:phpcr:workspace:export --path / ./seven_manager.xml

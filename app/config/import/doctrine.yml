@@ -6,7 +6,6 @@ parameters:
         caches:
             meta: doctrine_cache.providers.phpcr_meta
             nodes: doctrine_cache.providers.phpcr_nodes
-
         logging: true
         profiling: true
         parameters:
@@ -20,7 +19,7 @@ parameters:
     users:
         admin:
             password: admin
-            roles: ROLE_SUPER_ADMIN
+            roles: [ROLE_SUPER_ADMIN, ROLE_USER]
 
 # Doctrine ORM Configuration
 doctrine:
@@ -64,15 +63,9 @@ doctrine_phpcr:
                 prefix: Sonata\MediaBundle\PHPCR
         auto_generate_proxy_classes: %kernel.debug%
         locales:
-            en:
-                - de
-                - fr
-            de:
-                - en
-                - fr
-            fr:
-                - en
-                - de
+            en: [de, fr]
+            de: [en, fr]
+            fr: [de, en]
 
 # Doctrine PHPCR Admin
 sonata_doctrine_phpcr_admin:

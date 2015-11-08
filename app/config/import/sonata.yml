@@ -33,7 +33,6 @@ sonata_admin:
                 - Symfony\Cmf\Bundle\SeoBundle\SeoAwareInterface
     templates:
         layout:                         SevenManagerBundle:Admin:layout.html.twig
-        #user_block:                    SonataAdminBundle:Core:user_block.html.twig
         user_block:                     admin/user_block.html.twig
         ajax:                           SonataAdminBundle::ajax_layout.html.twig
         list:                           SonataAdminBundle:CRUD:list.html.twig
@@ -86,17 +85,13 @@ sonata_admin:
                     - cmf_menu.node_admin
                     - cmf_routing.route_admin
                     - cmf_routing.redirect_route_admin
-    #assets:
-    #    javascripts:
-    #        - bundles/sonataadmin/vendor/jquery/dist/jquery.min.js
-    #    stylesheets:
-    #        - bundles/sonataadmin/vendor/AdminLTE/css/font-awesome.min.css
 
 # Block
 sonata_block:
     default_contexts: [cms]
     blocks:
         sonata.user.block.account: # used to display menu option (login option)
+            contexts:   [admin]
         sonata.admin.block.admin_list:
             contexts:   [admin]
         sonata.admin.block.search_result:
@@ -127,11 +122,6 @@ sonata_media:
     providers:
             image:
                 resizer: sonata.media.resizer.square
-    # if you don't use default namespace configuration
-    #class:
-    #    media: MyVendor\MediaBundle\Entity\Media
-    #    gallery: MyVendor\MediaBundle\Entity\Gallery
-    #    gallery_has_media: MyVendor\MediaBundle\Entity\GalleryHasMedia
     db_driver: doctrine_orm # or doctrine_mongodb, doctrine_phpcr it is mandatory to choose one here
     default_context: default # you need to set a context
     contexts:
@@ -157,7 +147,6 @@ sonata_media:
 sonata_intl:
     timezone:
         detectors:
-                    #- sonata.intl.timezone_detector.user
                     - sonata.intl.timezone_detector.locale
         locales:
             fr:    Europe/Paris
@@ -205,5 +194,18 @@ sonata_notification:
         enabled: false
 
 sonata_user:
-    security_acl: true
+    google_authenticator:
+            enabled: true
+            server:  symfony.sonata
+    security_acl: false
     manager_type: orm # can be orm or mongodb
+    admin:                  # Admin Classes
+        user:
+            class:          Sonata\UserBundle\Admin\Entity\UserAdmin
+            controller:     SonataAdminBundle:CRUD
+            translation:    SonataUserBundle
+
+        group:
+            class:          Sonata\UserBundle\Admin\Entity\GroupAdmin
+            controller:     SonataAdminBundle:CRUD
+            translation:    SonataUserBundle

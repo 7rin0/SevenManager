@@ -3,13 +3,12 @@ security:
         connection: default
 
     encoders:
-        Symfony\Component\Security\Core\User\User: plaintext
+        FOS\UserBundle\Model\UserInterface: sha512
 
     role_hierarchy:
         ROLE_ADMIN:       [ROLE_USER, ROLE_SONATA_ADMIN, CAN_VIEW_NON_PUBLISHED]
         ROLE_SUPER_ADMIN: [ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
-        SONATA:
-            - ROLE_SONATA_PAGE_ADMIN_PAGE_EDIT
+        SONATA: [ROLE_SONATA_PAGE_ADMIN_PAGE_EDIT, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH, ROLE_USER]
 
     providers:
         fos_userbundle:
@@ -37,8 +36,8 @@ security:
             anonymous:          true
 
         main:
-            pattern:             .*
-            #pattern: ^/
+            #pattern:             .*
+            pattern: ^/
             context:             user
             form_login:
                 provider:       fos_userbundle
@@ -47,8 +46,8 @@ security:
                 check_path:     /login_check
                 failure_path:   null
             logout:             true
-            anonymous:          true
-            #anonymous: ~
+            anonymous: ~
+            switch_user: true
             #http_basic:
             #    realm: "Secured Demo Area (username: admin, password: admin)"
 
@@ -67,8 +66,7 @@ security:
         # Secured part of the site
         # This config requires being logged for the whole site and having the admin role for the admin part.
         # Change these rules to adapt them to your needs
-        - { path: ^(/(de|fr|en))?/admin, roles: ROLE_ADMIN }
-        - { path: ^/admin/, role: [ROLE_ADMIN, ROLE_SONATA_ADMIN] }
+        - { path: ^(/(de|fr|en))?/admin, roles: [ROLE_ADMIN, ROLE_SONATA_ADMIN, ROLE_USER] }
         - { path: ^/.*, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/efconnect, role: ROLE_USER }
         - { path: ^/elfinder, role: ROLE_USER }

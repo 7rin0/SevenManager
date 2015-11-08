@@ -86,7 +86,7 @@ cmf_routing:
 cmf_create:
     editor_base_path: /bundles/cmfcreate/vendor/ckeditor/
     security:
-        role: IS_AUTHENTICATED_ANONYMOUSLY
+        role: ROLE_USER
 
 # Features configuration
 cmf_search:
