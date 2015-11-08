@@ -96,6 +96,7 @@ sonata_admin:
 sonata_block:
     default_contexts: [cms]
     blocks:
+        sonata.user.block.account: # used to display menu option (login option)
         sonata.admin.block.admin_list:
             contexts:   [admin]
         sonata.admin.block.search_result:
@@ -202,3 +203,7 @@ sonata_notification:
     backend: sonata.notification.backend.runtime
     admin:
         enabled: false
+
+sonata_user:
+    security_acl: true
+    manager_type: orm # can be orm or mongodb
