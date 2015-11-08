@@ -19,6 +19,7 @@ env:
 
 before_script:
   - composer self-update
+  - composer install
   - app/console doctrine:phpcr:workspace:create seven_manager -e=test
   - app/console doctrine:phpcr:repository:init -e=test
 
