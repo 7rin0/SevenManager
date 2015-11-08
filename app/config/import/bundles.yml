@@ -74,10 +74,13 @@ fos_rest:
 fos_user:
     db_driver:        orm # can be orm or mongodb (support is also available within FOSUser for couchdb, propel but none is given for SonataUserBundle)
     firewall_name:    main
-    user_class:       Application\Sonata\UserBundle\Entity\User
+    user_class:       Sonata\UserBundle\Entity\BaseUser
 
     group:
-        group_class:  Application\Sonata\UserBundle\Entity\Group
+        group_class:  Sonata\UserBundle\Entity\BaseGroup
+
+    service:
+        user_manager: sonata.user.orm.user_manager
 
     profile:
         # Authentication Form
