@@ -3,10 +3,10 @@ imports:
     - { resource: parameters.yml }
     - { resource: import/seven_manager.yml }
     - { resource: import/doctrine.yml }
-    - { resource: import/security.yml }
     - { resource: import/services.yml }
     - { resource: import/sonata.yml }
     - { resource: import/bundles.yml }
+    - { resource: import/security.yml }
 
 # Framework
 sensio_framework_extra:
