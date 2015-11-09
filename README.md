@@ -34,7 +34,7 @@ Run in Terminal (CTRL+ALT+T) in symfony-sonata project's root dir.
 - php app/console assets:install
 - php app/console assetic:dump
  
-#### Option 3 - Using make command
+#### OPTION 3 - Using make command
 - make get_requirements
 - make get_vendors
 - make init_database
