@@ -70,7 +70,8 @@
     "incenteev/composer-parameter-handler": "2.1.1",
     "wjzijderveld/check-bundles": "^2.0@dev",
     "sonata-project/comment-bundle": "^2.2@dev",
-    "sonata-project/google-authenticator": "^1.0"
+    "sonata-project/google-authenticator": "^1.0",
+    "sonata-project/exporter": "^1.4"
   },
   "provide": {
     "phpcr/phpcr-implementation": "2.1.0"
