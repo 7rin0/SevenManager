@@ -9,6 +9,8 @@ init_database:
 	-php app/console doctrine:database:create -q -n
 	-php app/console doctrine:phpcr:init:dbal --force -q -n
 	php app/console doctrine:phpcr:repository:init -n
+	php app/console fos:user:create seven_manager lfs.severino@gmail.com s7ven --super-admin -q
+	php app/console fos:user:create admin admin@admin.com admin --super-admin -q
 
 load_fixtures:
 	php app/console doctrine:phpcr:fixtures:load -n
