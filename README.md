@@ -34,7 +34,7 @@ Run in Terminal (CTRL+ALT+T) in symfony-sonata project's root dir.
 - php app/console assets:install
 - php app/console assetic:dump
  
-### Option 3 - Using the existing Makefile
+#### Option 3 - Using make command
 - make get_requirements
 - make get_vendors
 - make init_database
@@ -42,7 +42,7 @@ Run in Terminal (CTRL+ALT+T) in symfony-sonata project's root dir.
 - make generate_assets
 - make set_permissions
   
-## Set permissions
+### Set permissions
  - chmod -R 777 app web
  
      **or**
