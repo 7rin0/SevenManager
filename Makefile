@@ -34,3 +34,7 @@ export_database:
 
 read_mapping:
 	php app/console doctrine:phpcr:mapping:info
+
+clear_cache:
+	php app/console doctrine:cache:clear-query
+	sudo rm -rf app/cache/* app/logs/*
