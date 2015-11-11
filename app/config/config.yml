@@ -44,6 +44,7 @@ twig:
             - 'SonataFormatterBundle:Form:formatter.html.twig'
             - 'SonataAdminBundle:Form:silex_form_div_layout.html.twig'
             - 'SonataCoreBundle:Form:datepicker.html.twig'
+            - 'SonataCoreBundle:Form:colorpicker.html.twig'
     exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
 
 # Assets
