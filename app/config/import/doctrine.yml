@@ -62,6 +62,7 @@ doctrine_phpcr:
             SonataMediaBundle:
                 prefix: Sonata\MediaBundle\PHPCR
         auto_generate_proxy_classes: %kernel.debug%
+        locale_fallback: hardcoded
         locales:
             en: [de, fr]
             de: [en, fr]
