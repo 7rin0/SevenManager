@@ -57,6 +57,9 @@ cmf_routing:
             router.default: 100
     dynamic:
         route_collection_limit: 10
+        persistence:
+            phpcr:
+                route_basepath: seven-manager
         controllers_by_type:
         controllers_by_class:
             # Seven Manager Template by Class
@@ -68,9 +71,6 @@ cmf_routing:
             SevenManagerBundle\Document\Pages\Post:  SevenManagerBundle\Controller\DefaultController::indexAction
             SevenManagerBundle\Document\Pages\Gallery:  SevenManagerBundle\Controller\DefaultController::indexAction
             SevenManagerBundle\Document\Pages\Form:  SevenManagerBundle\Controller\DefaultController::indexAction
-        persistence:
-            phpcr:
-                route_basepath: seven-manager
         templates_by_class:
             # Seven Manager Template by Class
             SevenManagerBundle\Document\Pages\Boilerplate:  SevenManagerBundle:Page:boilerplate.html.twig
@@ -108,6 +108,9 @@ sonata_doctrine_phpcr_admin:
             valid_children:
                 - all
         SevenManagerBundle\Document\Pages\Form:
+            valid_children:
+                - all
+        SevenManagerBundle\Document\Blocks\ImageOne:
             valid_children:
                 - all
         Doctrine\ODM\PHPCR\Document\Generic:
