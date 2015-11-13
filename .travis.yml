@@ -17,10 +17,10 @@ env:
   - TRANSPORT=jackrabbit
   - TRANSPORT=doctrine_dbal
 
-before_script:
-  - composer self-update
-  - php -d memory_limit=-1 composer install
-  - app/console doctrine:phpcr:workspace:create seven_manager -e=test
-  - app/console doctrine:phpcr:repository:init -e=test
+#before_script:
+#  - composer self-update
+#  - php -d memory_limit=-1 composer install
+#  - app/console doctrine:phpcr:workspace:create seven_manager -e=test
+#  - app/console doctrine:phpcr:repository:init -e=test
 
 script: phpunit -c app
