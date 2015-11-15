@@ -36,11 +36,21 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install nginx -y
 # Setup Ngrok to easily tunnel port 80
 RUN apt-get install ngrok* -y
 
+# Restart Services
+RUN service mysql restart
+RUN service apache2 restart
+RUN service nginx restart
+
 # Install Composer
 RUN curl -sS http://getcomposer.org/installer | php; sudo mv composer.phar /usr/local/bin/composer; bash
+RUN COMPOSER_PROCESS_TIMEOUT=2000
+RUN composer update
 
 # Install Project Seven Manager
-RUN cd /var/www/; git clone https://github.com/7rin0/SevenManager.git; cd SevenManager; composer install  --prefer-source --no-interaction
+WORKDIR /var/www/
+RUN git clone https://github.com/7rin0/SevenManager.git
+WORKDIR ./SevenManager
+RUN composer install  --prefer-source --no-interaction
 
 # Database, Assets and Users
 RUN -php app/console doctrine:database:create -q -n
@@ -52,7 +62,7 @@ RUN php app/console fos:user:create admin admin@admin.com admin --super-admin -q
 # To Exploit
 ENTRYPOINT ["top", "-b"]
 CMD ["-c"]
-EXPOSE 80 443
+EXPOSE 80 443 3306
 VOLUME ["/var/www", "/var/log/apache2", "/etc/apache2"]
 USER daemon
 WORKDIR /
