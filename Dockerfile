@@ -13,7 +13,7 @@ RUN echo mysql-server mysql-server/root_password_again password root | sudo debc
 RUN sudo apt-get install mysql-server libapache2-mod-auth-mysql -y
 
 # Setup PHP and PHP Mods
-RUN sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt php5-fpm php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl -y
+RUN sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt php5-fpm php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-sqlite php5-tidy php5-xmlrpc php5-xsl -y
 
 # Setup Nginx
 echo "deb http://ppa.launchpad.net/nginx/stable/ubuntu $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/nginx-stable.list
