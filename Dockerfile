@@ -1,8 +1,6 @@
 # Image
 FROM ubuntu
 
-RUN /bin/bash -c 'source $HOME/.bashrc ; echo $HOME'
-
 # Update dependencies
 RUN sudo apt-get update && sudo apt-get -y upgrade
 
