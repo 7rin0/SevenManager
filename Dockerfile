@@ -44,9 +44,9 @@ RUN service nginx restart
 # Install Composer
 RUN curl -sS http://getcomposer.org/installer | php; sudo mv composer.phar /usr/local/bin/composer; bash
 RUN COMPOSER_PROCESS_TIMEOUT=2000
-RUN composer update
 
 # Install Project Seven Manager
+RUN rm -rf /var/www/SevenManager
 WORKDIR /var/www/
 RUN git clone https://github.com/7rin0/SevenManager.git
 WORKDIR ./SevenManager
