@@ -38,3 +38,6 @@ read_mapping:
 clear_cache:
 	php app/console doctrine:cache:clear-query
 	sudo rm -rf app/cache/* app/logs/*
+
+docker_build:
+	docker build .
