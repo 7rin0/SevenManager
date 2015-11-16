@@ -48,14 +48,17 @@
     "sonata-project/doctrine-phpcr-admin-bundle": "1.2.3",
     "sonata-project/doctrine-orm-admin-bundle": "2.3.3",
     "sonata-project/intl-bundle": "2.2.3",
-    "sonata-project/admin-bundle": "2.3.6",
+    "sonata-project/admin-bundle": "2.3.7",
     "sonata-project/formatter-bundle": "2.3.3",
     "sonata-project/media-bundle": "2.3.3",
     "sonata-project/doctrine-extensions": "~1.0",
     "sonata-project/cache-bundle": "2.2.4",
     "sonata-project/user-bundle": "~2.2",
     "sonata-project/markitup-bundle": "^2.1@dev",
-    "doctrine/doctrine-bundle": "1.5.2",
+    "sonata-project/comment-bundle": "^2.2@dev",
+    "sonata-project/google-authenticator": "^1.0",
+    "sonata-project/exporter": "^1.4",
+    "doctrine/doctrine-bundle": "~1.6",
     "doctrine/phpcr-bundle": "1.2.4",
     "doctrine/doctrine-migrations-bundle": "~1.1",
     "doctrine/data-fixtures": "~1.0",
@@ -68,10 +71,7 @@
     "helios-ag/fm-elfinder-bundle": "5.1",
     "burgov/key-value-form-bundle": "1.2.0",
     "incenteev/composer-parameter-handler": "2.1.1",
-    "wjzijderveld/check-bundles": "^2.0@dev",
-    "sonata-project/comment-bundle": "^2.2@dev",
-    "sonata-project/google-authenticator": "^1.0",
-    "sonata-project/exporter": "^1.4"
+    "wjzijderveld/check-bundles": "^2.0@dev"
   },
   "provide": {
     "phpcr/phpcr-implementation": "2.1.0"
