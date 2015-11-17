@@ -23,7 +23,7 @@
     }
   },
   "require": {
-    "php": ">=5.3.9",
+    "php": ">=5.4.0",
     "7rin0/seven-manager-bundle": "^2.3@dev",
     "symfony/symfony": "2.7.5 as 2.3.x-dev",
     "symfony/monolog-bundle": "~2.8",
