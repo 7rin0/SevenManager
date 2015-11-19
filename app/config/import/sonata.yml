@@ -66,7 +66,7 @@ sonata_admin:
             - { position: right, type: sonata.admin.block.admin_list }
         groups:
             content:
-                label: Blocks
+                label: Pages
                 icon: '<i class="fa fa-file-text-o"></i>'
                 items:
                     - cmf_content.admin
@@ -74,8 +74,8 @@ sonata_admin:
                     - cmf_block.container_admin
                     - cmf_block.reference_admin
                     - cmf_block.action_admin
-                    - cmf_block.imagine.slideshow_admin
-                    - cmf_block.imagine.imagine_admin
+                    #- cmf_block.imagine.slideshow_admin
+                    #- cmf_block.imagine.imagine_admin
                     - cmf_simple_cms.persistence.phpcr.admin.page
             routing:
                 label: Menu & URLs
