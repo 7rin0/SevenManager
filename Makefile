@@ -36,8 +36,9 @@ read_mapping:
 	php app/console doctrine:phpcr:mapping:info
 
 clear_cache:
-	php app/console doctrine:cache:clear-query
 	sudo rm -rf app/cache/* app/logs/*
+	php app/console doctrine:cache:clear-query
+	php app/console sonata:cache:flush-all
 
 docker_build:
 	docker build .
