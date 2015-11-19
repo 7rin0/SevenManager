@@ -82,6 +82,11 @@ block_cache:
     resource: "@CmfBlockBundle/Resources/config/routing/cache.xml"
     prefix: /
 
+# app/config/routing.yml
+sonata_cache_cache:
+    resource: '@SonataCacheBundle/Resources/config/routing/cache.xml'
+    prefix: /
+
 # Seven Manager Routing
 _seven_manager_yml:
     resource: "@SevenManagerBundle/Resources/config/routing.yml"
