@@ -2,7 +2,7 @@ imports:
     - { resource: config_dev.yml }
 
 parameters:
-    phpcr_workspace: sandbox_test
+    phpcr_workspace: seven_manager_dev
 
 framework:
     test: ~
