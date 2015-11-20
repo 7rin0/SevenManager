@@ -4,6 +4,8 @@ sonata_core:
 
 # Admin
 sonata_admin:
+    title:      Seven Manager
+    #title_logo:
     extensions:
         cmf_core.admin_extension.child:
             implements:
