@@ -42,3 +42,6 @@ clear_cache:
 
 docker_build:
 	docker build .
+
+start_server:
+	php app/console server:start
