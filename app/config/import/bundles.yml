@@ -91,6 +91,16 @@ fos_user:
             name:               fos_user_profile_form
             validation_groups:  [Authentication] # Please note : this is not the default value
 
+fos_comment:
+    db_driver: orm
+    class:
+        model:
+            comment: Application\Sonata\CommentBundle\Entity\Comment
+            thread: Application\Sonata\CommentBundle\Entity\Thread
+    form:
+        comment:
+            type: sonata_comment_comment
+
 ivory_ck_editor:
     default_config: default
     configs:

@@ -219,3 +219,10 @@ sonata_cache:
             prefix: seven_manager_cache
             servers:
                 - {host: 127.0.0.1, port: 11211, weight: 0}
+
+# Sonata comment
+sonata_comment:
+    manager_type: orm
+    class:
+        comment: Application\Sonata\CommentBundle\Entity\Comment
+        thread: Application\Sonata\CommentBundle\Entity\Thread
