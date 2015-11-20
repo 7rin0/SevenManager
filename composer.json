@@ -73,7 +73,8 @@
     "burgov/key-value-form-bundle": "1.2.0",
     "incenteev/composer-parameter-handler": "2.1.1",
     "wjzijderveld/check-bundles": "^2.0@dev",
-    "elasticsearch/elasticsearch": "~2.0"
+    "elasticsearch/elasticsearch": "~2.0",
+    "symfony/security-acl": "^2.7"
   },
   "provide": {
     "phpcr/phpcr-implementation": "2.1.0"
