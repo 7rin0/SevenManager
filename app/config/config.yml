@@ -51,7 +51,7 @@ twig:
 assetic:
     debug:          "%kernel.debug%"
     use_controller: false
-    bundles:        [CmfCreateBundle, SevenManagerBundle]
+    bundles:        [CmfCreateBundle, SevenManagerBundle, FOSCommentBundle]
     filters:
         cssrewrite: ~
 
