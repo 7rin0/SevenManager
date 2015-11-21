@@ -4,8 +4,8 @@ sonata_admin:
     templates:
     dashboard:
         blocks:
-            -
-                position: left
+            -   position: top
+                class:    col-lg-12 col-md-12 col-xs-12
                 type: sonata.block.service.text
                 settings:
                     content: >
@@ -13,30 +13,30 @@ sonata_admin:
                         <p>Be free to follow, use or help improve this structure totaly based in Symfony CMF!</p>
                         <p>Fell free to play arround (documents, blocks, fixtures), add functionnalities and/or use
                         Seven Manager Bundle as a kickstart to a new project.</p>
-            -
-                position: left
+
+            -   position: right
                 type: sonata.admin.block.admin_list
                 settings:
                     groups: [seven_manager_boilerplate, seven_manager_pages, seven_manager_containers, seven_manager_blocks]
 
         groups:
             seven_manager_boilerplate:
-              label: Labs Seven Manager
-              icon: '<i class="fa fa-plus-square"></i>'
-              items:
-                  - seven_manager.admin.pages.boilerplate
+                label: Labs Seven Manager
+                icon: '<i class="fa fa-plus-square"></i>'
+                items:
+                    - seven_manager.admin.pages.boilerplate
 
             seven_manager_pages:
-              label: Pages Seven Manager
-              icon: '<i class="fa fa-plus-square"></i>'
-              items:
-                  - seven_manager.admin.pages.homepage
-                  - seven_manager.admin.pages.node
-                  - seven_manager.admin.pages.page
-                  - seven_manager.admin.pages.post
-                  - seven_manager.admin.pages.article
-                  - seven_manager.admin.pages.gallery
-                  - seven_manager.admin.pages.form
+                label: Pages Seven Manager
+                icon: '<i class="fa fa-plus-square"></i>'
+                items:
+                    - seven_manager.admin.pages.homepage
+                    - seven_manager.admin.pages.node
+                    - seven_manager.admin.pages.page
+                    - seven_manager.admin.pages.post
+                    - seven_manager.admin.pages.article
+                    - seven_manager.admin.pages.gallery
+                    - seven_manager.admin.pages.form
 
             seven_manager_containers:
                 label: Containers Seven Manager
