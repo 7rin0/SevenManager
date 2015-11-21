@@ -63,7 +63,7 @@ class AppKernel extends Kernel
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new FOS\CommentBundle\FOSCommentBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle($this),
             new Liip\SearchBundle\LiipSearchBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
             new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
