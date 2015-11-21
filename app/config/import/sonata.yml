@@ -63,6 +63,13 @@ sonata_admin:
         short_object_description:       SonataAdminBundle:Helper:short-object-description.html.twig
         search_result_block:            SonataAdminBundle:Block:block_search_result.html.twig
     dashboard:
+        blocks:
+            - { position: right, type: sonata_admin_doctrine_phpcr.tree_block }
+            -
+                position: right
+                type: sonata.admin.block.admin_list
+                settings:
+                    groups: [routing, content]
         groups:
             routing:
                 label: Menu & URLs
@@ -85,13 +92,6 @@ sonata_admin:
                     #- cmf_block.imagine.slideshow_admin
                     #- cmf_block.imagine.imagine_admin
                     - cmf_simple_cms.persistence.phpcr.admin.page
-        blocks:
-            - { position: left, type: sonata_admin_doctrine_phpcr.tree_block }
-            -
-                position: center
-                type: sonata.admin.block.admin_list
-                settings:
-                    groups: [routing, content]
 
 # Block
 sonata_block:

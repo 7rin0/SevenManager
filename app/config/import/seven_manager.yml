@@ -14,7 +14,7 @@ sonata_admin:
                         <p>Fell free to play arround (documents, blocks, fixtures), add functionnalities and/or use
                         Seven Manager Bundle as a kickstart to a new project.</p>
             -
-                position: right
+                position: left
                 type: sonata.admin.block.admin_list
                 settings:
                     groups: [seven_manager_boilerplate, seven_manager_pages, seven_manager_containers, seven_manager_blocks]
