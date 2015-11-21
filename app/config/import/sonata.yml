@@ -65,9 +65,15 @@ sonata_admin:
     dashboard:
         blocks:
             - { position: left, type: sonata_admin_doctrine_phpcr.tree_block }
-            - { position: right, type: sonata.admin.block.admin_list }
+            -
+                position: right
+                type: sonata.admin.block.admin_list
+                settings:
+                    groups: [routing, content]
+
         groups:
             content:
+                #roles: [ ROLE_ONE, ROLE_TWO ]
                 label: Pages
                 icon: '<i class="fa fa-file-text-o"></i>'
                 items:
