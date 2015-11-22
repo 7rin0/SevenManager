@@ -62,7 +62,7 @@ cmf_routing:
             cmf_routing.dynamic_router: 20
             router.default: 100
     dynamic:
-        route_collection_limit: 10
+        route_collection_limit: 100
         persistence:
             phpcr:
                 route_basepath: seven-manager
