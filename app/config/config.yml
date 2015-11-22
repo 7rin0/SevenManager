@@ -64,7 +64,9 @@ cmf_core:
     multilang:
         locales: %locales%
     persistence:
-        phpcr: true
+        phpcr:
+            enabled: true
+            translation_strategy: attribute
 
 # Cmf Routing Configuration
 cmf_routing:
