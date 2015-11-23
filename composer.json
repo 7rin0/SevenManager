@@ -74,7 +74,8 @@
     "incenteev/composer-parameter-handler": "2.1.1",
     "wjzijderveld/check-bundles": "^2.0@dev",
     "elasticsearch/elasticsearch": "~2.0",
-    "symfony/security-acl": "^2.7"
+    "symfony/security-acl": "^2.7",
+    "sonata-project/classification-bundle": "~2.2"
   },
   "provide": {
     "phpcr/phpcr-implementation": "2.1.0"
