@@ -28,6 +28,7 @@
     "symfony/symfony": "2.7.5 as 2.3.x-dev",
     "symfony/monolog-bundle": "~2.8",
     "symfony/swiftmailer-bundle": "2.3.8",
+    "symfony/security-acl": "^2.7",
     "sensio/framework-extra-bundle": "3.0.10",
     "sensio/distribution-bundle": "4.0.2",
     "symfony-cmf/symfony-cmf": "1.2.*",
@@ -58,6 +59,7 @@
     "sonata-project/comment-bundle": "^2.2@dev",
     "sonata-project/google-authenticator": "^1.0",
     "sonata-project/exporter": "dev-master",
+    "sonata-project/classification-bundle": "~2.2",
     "doctrine/doctrine-bundle": "~1.6",
     "doctrine/phpcr-odm": "1.2.6",
     "doctrine/phpcr-bundle": "1.2.4",
@@ -74,8 +76,7 @@
     "incenteev/composer-parameter-handler": "2.1.1",
     "wjzijderveld/check-bundles": "^2.0@dev",
     "elasticsearch/elasticsearch": "~2.0",
-    "symfony/security-acl": "^2.7",
-    "sonata-project/classification-bundle": "~2.2"
+    "gedmo/doctrine-extensions": "^2.4"
   },
   "provide": {
     "phpcr/phpcr-implementation": "2.1.0"
