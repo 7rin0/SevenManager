@@ -10,24 +10,24 @@ sonata_admin:
                 settings:
                     content: >
                         <h2>Welcome to Seven Manager</h2>
-                        <p>Be free to follow, use or help improve this structure totaly based in Symfony CMF!</p>
+                        <p>Be free to follow, use or help improve this structure totally based in Symfony CMF!</p>
                         <p>Fell free to play arround (documents, blocks, fixtures), add functionnalities and/or use
                         Seven Manager Bundle as a kickstart to a new project.</p>
 
-            -   position: right
+            -   position: left
                 type: sonata.admin.block.admin_list
                 settings:
                     groups: [seven_manager_boilerplate, seven_manager_pages, seven_manager_containers, seven_manager_blocks]
 
         groups:
             seven_manager_boilerplate:
-                label: Labs Seven Manager
-                icon: '<i class="fa fa-plus-square"></i>'
+                label: S7M - Labs
+                icon: '<i class="fa fa-flask"></i>'
                 items:
                     - seven_manager.admin.pages.boilerplate
 
             seven_manager_pages:
-                label: Pages Seven Manager
+                label: S7M - Pages
                 icon: '<i class="fa fa-plus-square"></i>'
                 items:
                     - seven_manager.admin.pages.homepage
@@ -39,17 +39,22 @@ sonata_admin:
                     - seven_manager.admin.pages.form
 
             seven_manager_containers:
-                label: Containers Seven Manager
+                label: S7M - Containers
                 icon: '<i class="fa fa-archive"></i>'
                 items:
                     - seven_manager.admin.containers.slideshow
 
             seven_manager_blocks:
-                label: Blocks Seven Manager
+                label: S7M - Blocks
                 icon: '<i class="fa fa-picture-o"></i>'
                 items:
                     - seven_manager.admin.blocks.slideone
                     - seven_manager.admin.blocks.textone
+
+            seven_manager_fields:
+                label: S7M - Fields
+                icon: '<i class="fa fa-picture-o"></i>'
+                items: ~
 
 cmf_routing_auto:
     persistence:

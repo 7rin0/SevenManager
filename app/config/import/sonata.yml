@@ -64,12 +64,12 @@ sonata_admin:
         search_result_block:            SonataAdminBundle:Block:block_search_result.html.twig
     dashboard:
         blocks:
-            -   position: left
+            -   position: right
                 class: col-lg-6 col-md-6 col-xs-6
                 position: right
                 type: sonata_admin_doctrine_phpcr.tree_block
 
-            -   position: left
+            -   position: right
                 type: sonata.admin.block.admin_list
                 settings:
                     groups: [routing, content]
@@ -82,19 +82,19 @@ sonata_admin:
                     - cmf_menu.node_admin
                     - cmf_routing.route_admin
                     - cmf_routing.redirect_route_admin
-            content:
-                #roles: [ ROLE_ONE, ROLE_TWO ]
-                label: Pages
-                icon: '<i class="fa fa-file-text-o"></i>'
-                items:
-                    - cmf_content.admin
-                    - cmf_block.simple_admin
-                    - cmf_block.container_admin
-                    - cmf_block.reference_admin
-                    - cmf_block.action_admin
-                    #- cmf_block.imagine.slideshow_admin
-                    #- cmf_block.imagine.imagine_admin
-                    - cmf_simple_cms.persistence.phpcr.admin.page
+            #content:
+            #    roles: [ ROLE_ONE, ROLE_TWO ]
+            #    label: Pages
+            #    icon: '<i class="fa fa-file-text-o"></i>'
+            #    items:
+            #        - cmf_content.admin
+            #        - cmf_block.simple_admin
+            #        - cmf_block.container_admin
+            #        - cmf_block.reference_admin
+            #        - cmf_block.action_admin
+            #        - cmf_block.imagine.slideshow_admin
+            #        - cmf_block.imagine.imagine_admin
+            #        - cmf_simple_cms.persistence.phpcr.admin.page
 
 # Block
 sonata_block:
