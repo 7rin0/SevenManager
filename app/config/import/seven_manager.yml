@@ -17,7 +17,7 @@ sonata_admin:
             -   position: left
                 type: sonata.admin.block.admin_list
                 settings:
-                    groups: [seven_manager_boilerplate, seven_manager_pages, seven_manager_containers, seven_manager_blocks]
+                    groups: [seven_manager_boilerplate, seven_manager_pages, seven_manager_containers, seven_manager_blocks, seven_manager_menu]
 
         groups:
             seven_manager_boilerplate:
@@ -50,6 +50,13 @@ sonata_admin:
                 items:
                     - seven_manager.admin.blocks.slideone
                     - seven_manager.admin.blocks.textone
+                    - seven_manager.admin.blocks.linkone
+
+            seven_manager_menu:
+                label: S7M - Menu
+                icon: '<i class="fa fa-list-alt"></i>'
+                items:
+                    - seven_manager.admin.menu.menu
 
             seven_manager_fields:
                 label: S7M - Fields
@@ -122,6 +129,9 @@ sonata_doctrine_phpcr_admin:
             valid_children:
                 - all
         SevenManagerBundle\Document\Blocks\ImageOne:
+            valid_children:
+                - all
+        SevenManagerBundle\Document\Menu\Menu:
             valid_children:
                 - all
         Doctrine\ODM\PHPCR\Document\Generic:
