@@ -65,6 +65,31 @@ Run in Terminal (CTRL+ALT+T) in symfony-sonata project's root dir.
  - http://symfony.com/doc/current/cmf/bundles/block/index.html  
  - https://sonata-project.org/bundles/block/master/doc/index.html
 
-## Contributing
-Thanks to
-[everyone who has contributed](https://github.com/symfony-cmf/standard-edition/contributors) already.
+
+## Migration instructions:
+
+#### Set "addLocalePattern" flag to existing MultilangPage documents:
+
+````bash
+    ./app/console doctrine:phpcr:nodes:update --query="SELECT * FROM [nt:unstructured] WHERE phpcr:class = \"Symfony\\Cmf\\Bundle\\SimpleCmsBundle\\Document\\MultilangPage\"" --apply-closure="\$node->setProperty('addLocalePattern', true);"
+````
+
+#### Rename classes:
+
+````bash
+    export CMFNS="Symfony\\Cmf\\Bundle\\SimpleCmsBundle"
+    ./app/console doctrine:phpcr:document:migrate-class \
+       $CMFNS"\\Document\\MultilangPage" \
+       $CMFNS"\\Doctrine\\Phpcr\\Page"
+    ./app/console doctrine:phpcr:document:migrate-class \
+       $CMFNS"\\Document\\MultilangRedirectRoute" \
+       $CMFNS"\\Doctrine\\Phpcr\\MultilangRedirectRoute"
+    ./app/console doctrine:phpcr:document:migrate-class \
+       $CMFNS"\\Document\\MultilangRoute" \
+       $CMFNS"\\Doctrine\\Phpcr\\MultilangRoute"
+    ./app/console doctrine:phpcr:document:migrate-class \
+       $CMFNS"\\Document\\MultilangRouteProvider" \
+       $CMFNS"\\Doctrine\\Phpcr\\MultilangRouteProvider"
+    ./app/console doctrine:phpcr:document:migrate-class \
+       $CMFNS"\\Document\\Page" \
+       $CMFNS"\\Doctrine\\Phpcr\\Page"
