@@ -49,7 +49,11 @@ Run in Terminal (CTRL+ALT+T) in symfony-sonata project's root dir.
  
  - [Symfony: The Recommended Way!](http://symfony.com/doc/current/book/installation.html#book-installation-permissions)
     
-    
+
+## Useful commands
+#### Import PHPCR Database
+- php app/console doctrine:phpcr:workspace:import -p /jcr:root exported_phpcr_database.xml
+
 ## Documentation
 
 #### Installing the Standard Edition
