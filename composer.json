@@ -65,7 +65,7 @@
     "doctrine/phpcr-bundle": "1.2.4",
     "doctrine/doctrine-migrations-bundle": "~1.1",
     "doctrine/data-fixtures": "~1.0",
-    "jackalope/jackalope-doctrine-dbal": "1.2.4",
+    "jackalope/jackalope-doctrine-dbal": "^1.2",
     "liip/functional-test-bundle": "1.2.2",
     "liip/imagine-bundle": "1.3.1",
     "eko/feedbundle": "1.2.6",
@@ -76,7 +76,8 @@
     "incenteev/composer-parameter-handler": "2.1.1",
     "wjzijderveld/check-bundles": "^2.0@dev",
     "elasticsearch/elasticsearch": "~2.0",
-    "gedmo/doctrine-extensions": "^2.4"
+    "gedmo/doctrine-extensions": "^2.4",
+    "phpcr/phpcr-shell": "dev-master"
   },
   "provide": {
     "phpcr/phpcr-implementation": "2.1.0"
