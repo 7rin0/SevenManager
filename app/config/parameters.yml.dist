@@ -17,7 +17,7 @@ parameters:
         - en
         - fr
         - de
-    coffee.extension: \.coffee-disabled$
+    coffee.extension: ''
     coffee.bin: ''
     coffee.node: ''
     security_users:
