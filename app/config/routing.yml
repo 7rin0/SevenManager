@@ -23,14 +23,14 @@ admin_wo_locale:
     defaults:
         _controller: FrameworkBundle:Redirect:redirect
         route: sonata_admin_dashboard
-        permanent: true # this for 301
+        permanent: true
 
 admin_dashboard_wo_locale:
     pattern: /admin/dashboard
     defaults:
         _controller: FrameworkBundle:Redirect:redirect
         route: sonata_admin_dashboard
-        permanent: true # this for 301
+        permanent: true
 
 admin_dashboard:
     pattern: /{_locale}/admin/
