@@ -82,19 +82,6 @@ sonata_admin:
                     - cmf_menu.node_admin
                     - cmf_routing.route_admin
                     - cmf_routing.redirect_route_admin
-            #content:
-            #    roles: [ ROLE_ONE, ROLE_TWO ]
-            #    label: Pages
-            #    icon: '<i class="fa fa-file-text-o"></i>'
-            #    items:
-            #        - cmf_content.admin
-            #        - cmf_block.simple_admin
-            #        - cmf_block.container_admin
-            #        - cmf_block.reference_admin
-            #        - cmf_block.action_admin
-            #        - cmf_block.imagine.slideshow_admin
-            #        - cmf_block.imagine.imagine_admin
-            #        - cmf_simple_cms.persistence.phpcr.admin.page
 
 # Block
 sonata_block:
@@ -132,10 +119,10 @@ sonata_media:
     providers:
             image:
                 resizer: sonata.media.resizer.square
-    db_driver: doctrine_orm # or doctrine_mongodb, doctrine_phpcr it is mandatory to choose one here
-    default_context: default # you need to set a context
+    db_driver: doctrine_orm
+    default_context: default
     contexts:
-        default:  # the default context is mandatory
+        default:
             providers:
                 - sonata.media.provider.dailymotion
                 - sonata.media.provider.youtube
@@ -208,8 +195,8 @@ sonata_user:
             enabled: true
             server:  symfony.sonata
     security_acl: false
-    manager_type: orm # can be orm or mongodb
-    admin:                  # Admin Classes
+    manager_type: orm
+    admin:
         user:
             class:          Sonata\UserBundle\Admin\Entity\UserAdmin
             controller:     SonataAdminBundle:CRUD

@@ -36,20 +36,17 @@ security:
             anonymous:          true
 
         main:
-            #pattern:             .*
             pattern: ^/
             context:             user
+            logout:             true
+            anonymous: ~
+            switch_user: true
             form_login:
                 provider:       fos_userbundle
                 login_path:     /login
                 use_forward:    false
                 check_path:     /login_check
                 failure_path:   null
-            logout:             true
-            anonymous: ~
-            switch_user: true
-            #http_basic:
-            #    realm: "Secured Demo Area (username: admin, password: admin)"
 
     access_control:
         # URL of FOSUserBundle which need to be available to anonymous users
@@ -64,8 +61,6 @@ security:
         - { path: ^/admin/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
 
         # Secured part of the site
-        # This config requires being logged for the whole site and having the admin role for the admin part.
-        # Change these rules to adapt them to your needs
         - { path: ^(/(de|fr|en))?/admin, roles: [ROLE_ADMIN, ROLE_SONATA_ADMIN] }
         - { path: ^/.*, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/efconnect, role: ROLE_USER }

@@ -45,7 +45,6 @@ doctrine:
                 user:     "%database_user%"
                 password: "%database_password%"
                 charset:  UTF8
-                #path:     "%database_path%"
         types:
             json: Sonata\Doctrine\Types\JsonType
 
