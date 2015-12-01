@@ -4,12 +4,10 @@ imports:
 framework:
     router:
         resource: "%kernel.root_dir%/config/routing_dev.yml"
-    #    strict_requirements: true
     profiler: { only_exceptions: false }
 
 security:
     encoders:
-        # Don't use it in production
         Symfony\Component\Security\Core\User\User: plaintext
     providers:
         in_memory:
@@ -17,7 +15,6 @@ security:
               users: %users%
 
 web_profiler:
-    #toolbar: "%debug_toolbar%"
     toolbar: true
     intercept_redirects: false
 
@@ -42,12 +39,3 @@ monolog:
                 VERBOSITY_VERY_VERBOSE: NOTICE
                 VERBOSITY_DEBUG: DEBUG
             channels: ["doctrine"]
-        #firephp:
-        #    type:   firephp
-        #    level:  info
-        #chromephp:
-        #    type:   chromephp
-        #    level:  info
-
-#swiftmailer:
-#    delivery_address: me@example.com

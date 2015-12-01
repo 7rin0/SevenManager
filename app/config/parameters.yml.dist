@@ -12,7 +12,7 @@ parameters:
     mailer_user: null
     mailer_password: null
     locale: en
-    secret: ThisTokenIsNotSoSecretChangeIt
+    secret: ef2912d630c2bcba39ebf7ff0033dc440719527f
     locales:
         - en
         - fr

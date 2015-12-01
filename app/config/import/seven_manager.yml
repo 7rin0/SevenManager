@@ -91,14 +91,14 @@ cmf_routing:
             SevenManagerBundle\Document\Pages\Form:  SevenManagerBundle\Controller\DefaultController::indexAction
         templates_by_class:
             # Seven Manager Template by Class
-            SevenManagerBundle\Document\Pages\Boilerplate:  SevenManagerBundle:Page:boilerplate.html.twig
-            SevenManagerBundle\Document\Pages\Homepage:  SevenManagerBundle:Page:homepage.html.twig
-            SevenManagerBundle\Document\Pages\Node:  SevenManagerBundle:Page:node.html.twig
-            SevenManagerBundle\Document\Pages\Article:  SevenManagerBundle:Page:article.html.twig
-            SevenManagerBundle\Document\Pages\Page:  SevenManagerBundle:Page:page.html.twig
-            SevenManagerBundle\Document\Pages\Post:  SevenManagerBundle:Page:post.html.twig
-            SevenManagerBundle\Document\Pages\Gallery:  SevenManagerBundle:Page:gallery.html.twig
-            SevenManagerBundle\Document\Pages\Form:  SevenManagerBundle:Page:form.html.twig
+            SevenManagerBundle\Document\Pages\Boilerplate:  SevenManagerBundle:Pages:boilerplate.html.twig
+            SevenManagerBundle\Document\Pages\Homepage:  SevenManagerBundle:Default:index.html.twig
+            SevenManagerBundle\Document\Pages\Node:  SevenManagerBundle:Pages:node.html.twig
+            SevenManagerBundle\Document\Pages\Article:  SevenManagerBundle:Pages:article.html.twig
+            SevenManagerBundle\Document\Pages\Page:  SevenManagerBundle:Pages:page.html.twig
+            SevenManagerBundle\Document\Pages\Post:  SevenManagerBundle:Pages:post.html.twig
+            SevenManagerBundle\Document\Pages\Gallery:  SevenManagerBundle:Pages:gallery.html.twig
+            SevenManagerBundle\Document\Pages\Form:  SevenManagerBundle:Pages:form.html.twig
 
 # Custom Seven Manager Admin content
 sonata_doctrine_phpcr_admin:

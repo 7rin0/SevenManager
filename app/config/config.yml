@@ -14,25 +14,24 @@ sensio_framework_extra:
     request: { converters: true }
 
 framework:
-    #esi:             ~ # Edge Side Includes
     translator:      { fallback: "%locale%" }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
     form:            true
     csrf_protection: true
+    default_locale:  "%locale%"
+    trusted_hosts:   ~
+    trusted_proxies: ~
+    fragments:       ~
+    http_method_override: true
     validation:
       enable_annotations: true
     templating:
         engines: ['twig']
-    default_locale:  "%locale%"
-    trusted_hosts:   ~
-    trusted_proxies: ~
     session:
         name: symfony-sonata
         handler_id:  ~
-    fragments:       ~
-    http_method_override: true
 
 # Twig
 twig:
