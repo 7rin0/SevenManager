@@ -45,4 +45,4 @@ docker_build:
 	docker build .
 
 start_server:
-	php app/console server:start
+	php app/console server:start 127.0.0.1:7070
