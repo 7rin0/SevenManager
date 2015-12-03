@@ -1,16 +1,12 @@
 {
     "name": "seven-manager",
     "description": "Seven Manager Frontend Dependencies",
-    "directory": "web/assets/vendor/",
-    "analytics": false,
-    "timeout": 120000,
-    "color": true,
-    "resolvers": [
-      "bitbucket-resolver",
-      "github-enterprise-resolver",
-      "filesystem-bower-resolver-sync"
-    ],
     "dependencies": {
       "jquery": "~2.1"
-    }
+    },
+    "license": "MIT",
+    "ignore": [
+      "node_modules",
+      "bower_components"
+    ]
 }
