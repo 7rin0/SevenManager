@@ -1,3 +1,11 @@
 {
-    "directory": "web/assets/vendor/"
+    "directory": "web/assets/vendor/",
+    "analytics": false,
+    "timeout": 120000,
+    "color": true,
+    "resolvers": [
+      "bitbucket-resolver",
+      "github-enterprise-resolver",
+      "filesystem-bower-resolver-sync"
+    ]
 }
