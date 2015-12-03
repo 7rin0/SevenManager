@@ -40,6 +40,7 @@
 composer.lock
 
 #Custom
+node_modules
 bower_components
 /web/assetic
 /web/bundles/
