@@ -1,4 +1,5 @@
 {
+    "name": "seven-manager",
     "directory": "web/assets/vendor/",
     "analytics": false,
     "timeout": 120000,
