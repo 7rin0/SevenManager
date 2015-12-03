@@ -4,7 +4,7 @@ module.exports = function (grunt) {
         bowercopy: {
             options: {
                 srcPrefix: 'web/assets/vendor',
-                destPrefix: 'web/assets/vendor/min'
+                destPrefix: 'web/assets'
             },
             scripts: {
                 files: {
@@ -23,9 +23,30 @@ module.exports = function (grunt) {
                     'fonts': 'Font-Awesome/fonts'
                 }
             }
+        },
+        cssmin : {
+            bootstrap:{
+                src: 'web/assets/css/bootstrap.css',
+                dest: 'web/assets/css/min/bootstrap.min.css'
+            },
+            "font-awesome":{
+                src: 'web/assets/css/font-awesome.css',
+                dest: 'web/assets/css/min/font-awesome.min.css'
+            }
+        },
+        uglify : {
+            js: {
+                files: {
+                    'web/assets/js/min/jquery.min.js': ['web/assets/js/jquery.js'],
+                    'web/assets/js/min/bootstrap.min.js': ['web/assets/js/bootstrap.js']
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-bowercopy');
-    grunt.registerTask('default', ['bowercopy']);
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+
+    grunt.registerTask('default', ['bowercopy', 'cssmin', 'uglify'])
 };
