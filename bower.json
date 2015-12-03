@@ -1,5 +1,6 @@
 {
     "name": "seven-manager",
+    "description": "Seven Manager Frontend Dependencies",
     "directory": "web/assets/vendor/",
     "analytics": false,
     "timeout": 120000,
@@ -8,5 +9,8 @@
       "bitbucket-resolver",
       "github-enterprise-resolver",
       "filesystem-bower-resolver-sync"
-    ]
+    ],
+    "dependencies": {
+      "jquery": "~2.1"
+    }
 }
