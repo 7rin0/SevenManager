@@ -31,7 +31,7 @@ class Comment extends BaseComment
      * Thread of this comment
      *
      * @var Thread
-     * @ORM\ManyToOne(targetEntity="MyProject\MyBundle\Entity\Thread")
+     * @ORM\ManyToOne(targetEntity="Application\Sonata\CommentBundle\Entity\Thread")
      */
     protected $thread;
 
