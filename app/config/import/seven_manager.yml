@@ -51,7 +51,7 @@ sonata_admin:
                     - seven_manager.admin.blocks.slideone
                     - seven_manager.admin.blocks.textone
                     - seven_manager.admin.blocks.linkone
-                    - seven_manager.collections.font.title.desc.target
+                    - seven_manager.admin.collections.font.title.desc.target
 
             seven_manager_menu:
                 label: S7M - Menu
@@ -130,6 +130,9 @@ sonata_doctrine_phpcr_admin:
             valid_children:
                 - all
         SevenManagerBundle\Document\Blocks\ImageOne:
+            valid_children:
+                - all
+        SevenManagerBundle\Document\Collections\FontTitleDescTarget:
             valid_children:
                 - all
         SevenManagerBundle\Document\Menu\Menu:
