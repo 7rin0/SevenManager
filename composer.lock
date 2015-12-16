@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/7rin0/SevenManagerBundle.git",
-                "reference": "e8ef1c1c0b2506c18887b0b4e81dc758dea30ad3"
+                "reference": "b2984b1b81df1150201df31f8cfe849b1be9acfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/7rin0/SevenManagerBundle/zipball/e8ef1c1c0b2506c18887b0b4e81dc758dea30ad3",
-                "reference": "e8ef1c1c0b2506c18887b0b4e81dc758dea30ad3",
+                "url": "https://api.github.com/repos/7rin0/SevenManagerBundle/zipball/b2984b1b81df1150201df31f8cfe849b1be9acfb",
+                "reference": "b2984b1b81df1150201df31f8cfe849b1be9acfb",
                 "shasum": ""
             },
             "require": {
@@ -55,7 +55,7 @@
                 "sonata",
                 "symfony"
             ],
-            "time": "2015-12-10 02:01:03"
+            "time": "2015-12-15 22:12:33"
         },
         {
             "name": "aferrandini/urlizer",
@@ -900,12 +900,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "bfee907d3c346ab759d48f37bffcab78ede1c17f"
+                "reference": "de6c0bd243d058eb9f086144a6fed9d435737c78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/bfee907d3c346ab759d48f37bffcab78ede1c17f",
-                "reference": "bfee907d3c346ab759d48f37bffcab78ede1c17f",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/de6c0bd243d058eb9f086144a6fed9d435737c78",
+                "reference": "de6c0bd243d058eb9f086144a6fed9d435737c78",
                 "shasum": ""
             },
             "require": {
@@ -963,7 +963,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2015-12-11 17:02:08"
+            "time": "2015-12-15 18:16:51"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -1365,23 +1365,23 @@
         },
         {
             "name": "doctrine/migrations",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "d196ddc229f50c66c5a015c158adb78a2dfb4351"
+                "reference": "57e50714fcb34235cf055edc409e169b8d7af690"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/d196ddc229f50c66c5a015c158adb78a2dfb4351",
-                "reference": "d196ddc229f50c66c5a015c158adb78a2dfb4351",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/57e50714fcb34235cf055edc409e169b8d7af690",
+                "reference": "57e50714fcb34235cf055edc409e169b8d7af690",
                 "shasum": ""
             },
             "require": {
                 "doctrine/dbal": "~2.2",
                 "php": ">=5.4.0",
-                "symfony/console": "~2.3",
-                "symfony/yaml": "~2.3"
+                "symfony/console": "~2.3|~3.0",
+                "symfony/yaml": "~2.3|~3.0"
             },
             "require-dev": {
                 "doctrine/coding-standard": "dev-master",
@@ -1390,9 +1390,6 @@
                 "mockery/mockery": "^0.9.4",
                 "phpunit/phpunit": "~4.7",
                 "satooshi/php-coveralls": "0.6.*"
-            },
-            "suggest": {
-                "symfony/console": "to run the migration from the console"
             },
             "bin": [
                 "bin/doctrine-migrations"
@@ -1420,6 +1417,10 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Michael Simonson",
+                    "email": "contact@mikesimonson.com"
                 }
             ],
             "description": "Database Schema migrations using Doctrine DBAL",
@@ -1428,7 +1429,7 @@
                 "database",
                 "migrations"
             ],
-            "time": "2015-09-29 11:13:06"
+            "time": "2015-12-15 21:46:29"
         },
         {
             "name": "doctrine/orm",
@@ -1820,16 +1821,16 @@
         },
         {
             "name": "elasticsearch/elasticsearch",
-            "version": "v2.1.2",
+            "version": "v2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/elastic/elasticsearch-php.git",
-                "reference": "6256a76072f8e17046ae0fbe672a0985f6cd531a"
+                "reference": "7086a86cab241a77f19cdd653ae3d2e023b41699"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/6256a76072f8e17046ae0fbe672a0985f6cd531a",
-                "reference": "6256a76072f8e17046ae0fbe672a0985f6cd531a",
+                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/7086a86cab241a77f19cdd653ae3d2e023b41699",
+                "reference": "7086a86cab241a77f19cdd653ae3d2e023b41699",
                 "shasum": ""
             },
             "require": {
@@ -1870,7 +1871,7 @@
                 "elasticsearch",
                 "search"
             ],
-            "time": "2015-12-01 22:25:13"
+            "time": "2015-12-15 18:42:26"
         },
         {
             "name": "friendsofsymfony/comment-bundle",
@@ -5083,12 +5084,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDatagridBundle.git",
-                "reference": "5f7106a80c318e209612fffac8c41d571e0c8770"
+                "reference": "0749e710b936bf84736c648eee16bc45e2c04607"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDatagridBundle/zipball/5f7106a80c318e209612fffac8c41d571e0c8770",
-                "reference": "5f7106a80c318e209612fffac8c41d571e0c8770",
+                "url": "https://api.github.com/repos/sonata-project/SonataDatagridBundle/zipball/0749e710b936bf84736c648eee16bc45e2c04607",
+                "reference": "0749e710b936bf84736c648eee16bc45e2c04607",
                 "shasum": ""
             },
             "require": {
@@ -5132,7 +5133,7 @@
                 "datagrid",
                 "sonata"
             ],
-            "time": "2015-12-02 22:35:45"
+            "time": "2015-12-16 08:53:13"
         },
         {
             "name": "sonata-project/doctrine-extensions",
