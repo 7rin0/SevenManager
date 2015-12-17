@@ -80,7 +80,6 @@ class LoadStaticPageData extends ContainerAware implements FixtureInterface, Ord
                 $page->setBody($overview['body']);
             }
 
-
             if (isset($overview['publishable']) && $overview['publishable'] === false) {
                 $page->setPublishable(false);
             }
