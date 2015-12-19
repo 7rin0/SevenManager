@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/7rin0/SevenManagerBundle.git",
-                "reference": "b2984b1b81df1150201df31f8cfe849b1be9acfb"
+                "reference": "8c89d72b6ab68fcb37e3d012b5700810a521384f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/7rin0/SevenManagerBundle/zipball/b2984b1b81df1150201df31f8cfe849b1be9acfb",
-                "reference": "b2984b1b81df1150201df31f8cfe849b1be9acfb",
+                "url": "https://api.github.com/repos/7rin0/SevenManagerBundle/zipball/8c89d72b6ab68fcb37e3d012b5700810a521384f",
+                "reference": "8c89d72b6ab68fcb37e3d012b5700810a521384f",
                 "shasum": ""
             },
             "require": {
@@ -55,7 +55,7 @@
                 "sonata",
                 "symfony"
             ],
-            "time": "2015-12-15 22:12:33"
+            "time": "2015-12-17 23:03:28"
         },
         {
             "name": "aferrandini/urlizer",
@@ -630,16 +630,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.5.2",
+            "version": "v1.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "47c7128262da274f590ae6f86eb137a7a64e82af"
+                "reference": "47cdc76ceb95cc591d9c79a36dc3794975b5d136"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/47c7128262da274f590ae6f86eb137a7a64e82af",
-                "reference": "47c7128262da274f590ae6f86eb137a7a64e82af",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/47cdc76ceb95cc591d9c79a36dc3794975b5d136",
+                "reference": "47cdc76ceb95cc591d9c79a36dc3794975b5d136",
                 "shasum": ""
             },
             "require": {
@@ -696,7 +696,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2015-12-03 10:50:37"
+            "time": "2015-12-19 05:03:47"
         },
         {
             "name": "doctrine/collections",
