@@ -52,6 +52,7 @@ sonata_admin:
                     - seven_manager.admin.blocks.title.text
                     - seven_manager.admin.blocks.title.image
                     - seven_manager.admin.collections.font.title.desc.target
+                    - seven_manager.admin.collections.title.sub.desc.image.target
                     - seven_manager.admin.blocks.slideone
 
             seven_manager_menu:
