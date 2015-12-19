@@ -48,10 +48,12 @@ sonata_admin:
                 label: S7M - Blocks
                 icon: '<i class="fa fa-picture-o"></i>'
                 items:
-                    - seven_manager.admin.blocks.slideone
-                    - seven_manager.admin.blocks.textone
                     - seven_manager.admin.blocks.linkone
+                    - seven_manager.admin.blocks.textone
+                    - seven_manager.admin.blocks.title.text
+                    - seven_manager.admin.blocks.title.image
                     - seven_manager.admin.collections.font.title.desc.target
+                    - seven_manager.admin.blocks.slideone
 
             seven_manager_menu:
                 label: S7M - Menu
