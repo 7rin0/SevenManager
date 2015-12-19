@@ -49,7 +49,6 @@ sonata_admin:
                 icon: '<i class="fa fa-picture-o"></i>'
                 items:
                     - seven_manager.admin.blocks.linkone
-                    - seven_manager.admin.blocks.textone
                     - seven_manager.admin.blocks.title.text
                     - seven_manager.admin.blocks.title.image
                     - seven_manager.admin.collections.font.title.desc.target
