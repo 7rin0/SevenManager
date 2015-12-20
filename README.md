@@ -4,7 +4,7 @@
 
 * composer
 * Git 1.6+
-* PHP >=5.3.9
+* PHP >=5.4
 * php5-intl
 * phpunit 3.6+ (optional)
 
