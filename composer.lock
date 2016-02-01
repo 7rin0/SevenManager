@@ -7024,21 +7024,21 @@
         },
         {
             "name": "symfony-cmf/symfony-cmf",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/symfony-cmf.git",
-                "reference": "44642b336d3580f4b0d9a420ed414f66a6fad079"
+                "reference": "5c23d4f21bd2d43622db5e8c25e3a3d228dcff2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/symfony-cmf/zipball/44642b336d3580f4b0d9a420ed414f66a6fad079",
-                "reference": "44642b336d3580f4b0d9a420ed414f66a6fad079",
+                "url": "https://api.github.com/repos/symfony-cmf/symfony-cmf/zipball/5c23d4f21bd2d43622db5e8c25e3a3d228dcff2b",
+                "reference": "5c23d4f21bd2d43622db5e8c25e3a3d228dcff2b",
                 "shasum": ""
             },
             "require": {
-                "doctrine/phpcr-bundle": "1.2.*",
-                "doctrine/phpcr-odm": "1.2.*",
+                "doctrine/phpcr-bundle": "~1.2",
+                "doctrine/phpcr-odm": "~1.2",
                 "php": ">=5.3.3",
                 "symfony-cmf/block-bundle": "1.2.*",
                 "symfony-cmf/content-bundle": "1.2.*",
@@ -7080,7 +7080,7 @@
             ],
             "description": "Symfony Content Management Framework",
             "homepage": "http://cmf.symfony.com",
-            "time": "2014-10-21 18:43:04"
+            "time": "2016-02-01 14:48:28"
         },
         {
             "name": "symfony-cmf/tree-browser-bundle",
