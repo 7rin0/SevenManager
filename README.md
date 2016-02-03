@@ -1,3 +1,4 @@
+# SevenManager [![Build Status](https://travis-ci.org/7rin0/SevenManager.svg?branch=master)](https://travis-ci.org/7rin0/SevenManager)
 # Built on Symfony CMF Standard Edition architecture and infrastructure
 
 ## Requirements
