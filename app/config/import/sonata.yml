@@ -208,12 +208,12 @@ sonata_user:
             translation:    SonataUserBundle
 
 # See Sonata docs to use other cache services (esi, ssi, mongo, apc, predis, symfony)
-sonata_cache:
-    caches:
-        memcached:
-            prefix: seven_manager_cache
-            servers:
-                - {host: 127.0.0.1, port: 11211, weight: 0}
+#sonata_cache:
+#    caches:
+#        memcached:
+#            prefix: seven_manager_cache
+#            servers:
+#                - {host: 127.0.0.1, port: 11211, weight: 0}
 
 # Sonata comment
 sonata_comment:
