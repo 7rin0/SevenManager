@@ -6,20 +6,8 @@ php:
   - 7.0
   - hhvm
 
-sudo: false
-
-cache:
-  directories:
-    - $HOME/.composer/cache
-#
-#env:
-#  - TRANSPORT=jackrabbit
-#  - TRANSPORT=doctrine_dbal
+sudo: true
 
 before_script:
   - composer self-update
   - composer install
-#  - app/console doctrine:phpcr:workspace:create seven_manager -e=test
-#  - app/console doctrine:phpcr:repository:init -e=test
-
-script: phpunit --configuration phpunit.xml
