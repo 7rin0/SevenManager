@@ -11,10 +11,10 @@ sudo: false
 cache:
   directories:
     - $HOME/.composer/cache
-
-env:
-  - TRANSPORT=jackrabbit
-  - TRANSPORT=doctrine_dbal
+#
+#env:
+#  - TRANSPORT=jackrabbit
+#  - TRANSPORT=doctrine_dbal
 
 before_script:
   - composer self-update
