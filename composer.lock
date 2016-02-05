@@ -299,16 +299,16 @@
         },
         {
             "name": "components/jquery",
-            "version": "1.11.3",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/jquery.git",
-                "reference": "e7c492908a9746439e20b19a671c5001e8832732"
+                "reference": "8bb8fbe79bbfe785b6af15028f0bf69ca5459121"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/jquery/zipball/e7c492908a9746439e20b19a671c5001e8832732",
-                "reference": "e7c492908a9746439e20b19a671c5001e8832732",
+                "url": "https://api.github.com/repos/components/jquery/zipball/8bb8fbe79bbfe785b6af15028f0bf69ca5459121",
+                "reference": "8bb8fbe79bbfe785b6af15028f0bf69ca5459121",
                 "shasum": ""
             },
             "type": "component",
@@ -319,9 +319,9 @@
                     ],
                     "files": [
                         "jquery.min.js",
+                        "jquery.min.map",
                         "jquery-migrate.js",
-                        "jquery-migrate.min.js",
-                        "jquery.min.map"
+                        "jquery-migrate.min.js"
                     ]
                 }
             },
@@ -337,7 +337,7 @@
             ],
             "description": "jQuery JavaScript Library",
             "homepage": "http://jquery.com",
-            "time": "2015-06-08 13:35:17"
+            "time": "2016-02-05 01:30:23"
         },
         {
             "name": "components/jqueryui",
