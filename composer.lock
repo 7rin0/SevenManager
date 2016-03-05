@@ -2468,16 +2468,16 @@
         },
         {
             "name": "helios-ag/fm-elfinder-php-connector",
-            "version": "2.5",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/helios-ag/ElFinderPHP.git",
-                "reference": "1117919c0f2bc6958ee8d77af365c25e0d17ecd7"
+                "reference": "4a2098e9da0bfe29ef5b482b39d86b7b120c8539"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/helios-ag/ElFinderPHP/zipball/1117919c0f2bc6958ee8d77af365c25e0d17ecd7",
-                "reference": "1117919c0f2bc6958ee8d77af365c25e0d17ecd7",
+                "url": "https://api.github.com/repos/helios-ag/ElFinderPHP/zipball/4a2098e9da0bfe29ef5b482b39d86b7b120c8539",
+                "reference": "4a2098e9da0bfe29ef5b482b39d86b7b120c8539",
                 "shasum": ""
             },
             "require": {
@@ -2517,7 +2517,7 @@
                 "elfinder",
                 "filemanager"
             ],
-            "time": "2016-02-19 13:07:05"
+            "time": "2016-03-04 03:44:14"
         },
         {
             "name": "imagine/imagine",
