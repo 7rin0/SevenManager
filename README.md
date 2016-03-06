@@ -1,5 +1,5 @@
 # SevenManager [![Build Status](https://travis-ci.org/7rin0/SevenManager.svg?branch=master)](https://travis-ci.org/7rin0/SevenManager)
-## Seven Manager - project based on the Symfony CMF
+## A project based on the Symfony CMF
 
 ## Requirements
 * composer
