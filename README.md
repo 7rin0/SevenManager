@@ -28,7 +28,7 @@
 - php app/console assetic:dump
 - make run_server (optional)
 
-# Admin URL
+### Admin URL
 http://{HOST}/admin (eg: http://127.0.0.1:7070/admin)
  
 ### Set permissions
