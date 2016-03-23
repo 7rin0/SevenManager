@@ -39,3 +39,4 @@ docker_build:
 
 run_server:
 	php app/console server:start 127.0.0.1:7070
+	xdg-open http://127.0.0.1:7070
