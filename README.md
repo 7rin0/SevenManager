@@ -1,5 +1,5 @@
 # SevenManager [![Build Status](https://travis-ci.org/7rin0/SevenManager.svg?branch=master)](https://travis-ci.org/7rin0/SevenManager)
-## A project based on the Symfony CMF
+## A project based on Symfony CMF
 
 ## Requirements
 * composer
@@ -29,7 +29,7 @@
 - make run_server (optional)
 
 ### Admin URL
-http://{HOST}/admin (eg: http://127.0.0.1:7070/admin)
+http://{HOST}/admin (ex: http://127.0.0.1:7070/admin)
  
 ### Set permissions
  - chmod -R 777 app web
