@@ -35,3 +35,6 @@ http://{HOST}/admin (ex: http://127.0.0.1:7070/admin)
  - chmod -R 777 app web
      **or**
  - [Symfony: The Recommended Way!](http://symfony.com/doc/current/book/installation.html#book-installation-permissions)
+
+### Preview
+![alt tag](https://github.com/7rin0/SevenManager/raw/master/web/images/preview.gif)
