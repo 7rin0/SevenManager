@@ -6670,37 +6670,40 @@
         },
         {
             "name": "symfony-cmf/routing-auto",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/RoutingAuto.git",
-                "reference": "faa61f31a43f0ac4f59545454598e1cf53a5d66f"
+                "reference": "043260095bda5b4aec9ddb9449d2036a9b843efc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/RoutingAuto/zipball/faa61f31a43f0ac4f59545454598e1cf53a5d66f",
-                "reference": "faa61f31a43f0ac4f59545454598e1cf53a5d66f",
+                "url": "https://api.github.com/repos/symfony-cmf/RoutingAuto/zipball/043260095bda5b4aec9ddb9449d2036a9b843efc",
+                "reference": "043260095bda5b4aec9ddb9449d2036a9b843efc",
                 "shasum": ""
             },
             "require": {
                 "jms/metadata": "1.5.*",
-                "symfony-cmf/core-bundle": "~1.1",
-                "symfony-cmf/routing": "~1.2",
-                "symfony/config": "~2.2",
-                "symfony/options-resolver": "~2.2"
+                "php": "^5.3.9|^7.0",
+                "symfony-cmf/routing": "^1.2",
+                "symfony-cmf/slugifier-api": "^1.0",
+                "symfony/config": "^2.2|3.*",
+                "symfony/options-resolver": "^2.2"
             },
             "require-dev": {
-                "phpspec/prophecy": "~1.1.2",
-                "symfony/yaml": "~2.1"
+                "symfony/dependency-injection": "^2.0.5|3.*",
+                "symfony/event-dispatcher": "^2.2|3.*",
+                "symfony/yaml": "^2.1|3.*"
             },
             "suggest": {
                 "symfony-cmf/routing-auto-bundle": "To integrate this lirbary with Symfony and the CMF",
-                "symfony/yaml": "To be able to load Yaml configuration files"
+                "symfony/event-dispatcher": "To use the EventDispatchingAdapter, allowing to edit the AutoRoute documents (^2.2|3.*)",
+                "symfony/yaml": "To be able to load Yaml configuration files (^2.1|3.*)"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -6720,41 +6723,45 @@
             ],
             "description": "Component for automatically creating and managing routes for persisted objects",
             "homepage": "http://cmf.symfony.com",
-            "time": "2015-07-28 11:12:39"
+            "time": "2016-03-31 16:05:23"
         },
         {
             "name": "symfony-cmf/routing-auto-bundle",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/RoutingAutoBundle.git",
-                "reference": "840d8eb8bd751a10c8b7355657d26dc63dfa4313"
+                "reference": "cff61d9e23f3ff1ee209e371e09e5d1b84e74e68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/RoutingAutoBundle/zipball/840d8eb8bd751a10c8b7355657d26dc63dfa4313",
-                "reference": "840d8eb8bd751a10c8b7355657d26dc63dfa4313",
+                "url": "https://api.github.com/repos/symfony-cmf/RoutingAutoBundle/zipball/cff61d9e23f3ff1ee209e371e09e5d1b84e74e68",
+                "reference": "cff61d9e23f3ff1ee209e371e09e5d1b84e74e68",
                 "shasum": ""
             },
             "require": {
-                "aferrandini/urlizer": "1.0.*",
-                "jms/metadata": "1.5.*",
-                "symfony-cmf/core-bundle": "~1.2",
-                "symfony-cmf/routing-auto": "1.0.*",
-                "symfony-cmf/routing-bundle": "~1.2",
-                "symfony/config": "~2.2"
+                "aferrandini/urlizer": "~1.0.0",
+                "jms/metadata": "~1.5.0",
+                "php": "^5.3.9|^7.0",
+                "symfony-cmf/core-bundle": "^1.2",
+                "symfony-cmf/routing-auto": "^1.1",
+                "symfony-cmf/routing-bundle": "^1.2.0",
+                "symfony/config": "^2.2"
             },
             "require-dev": {
-                "doctrine/phpcr-odm": "~1.2",
-                "matthiasnoback/symfony-config-test": "0.*",
-                "matthiasnoback/symfony-dependency-injection-test": "0.*",
-                "symfony-cmf/testing": "~1.1",
-                "symfony/yaml": "~2.1"
+                "doctrine/phpcr-odm": "^1.3",
+                "matthiasnoback/symfony-config-test": "~0.1",
+                "matthiasnoback/symfony-dependency-injection-test": "~0.6",
+                "phpunit/phpunit": "^4.5",
+                "symfony-cmf/slugifier-api": "^1.0",
+                "symfony-cmf/testing": "^1.3",
+                "symfony/phpunit-bridge": "^2.7",
+                "symfony/yaml": "^2.1"
             },
             "suggest": {
                 "doctrine/phpcr-bundle": "To enable support for the PHPCR ODM documents",
                 "doctrine/phpcr-odm": "To enable support for the PHPCR ODM documents",
-                "symfony/yaml": "To be able to load Yaml configuration files"
+                "symfony/yaml": "To be able to load Yaml configuration files (^2.1)"
             },
             "type": "library",
             "extra": {
@@ -6779,7 +6786,7 @@
             ],
             "description": "Bundle which automatically creates and manages routes for persisted objects",
             "homepage": "http://cmf.symfony.com",
-            "time": "2015-11-10 07:03:11"
+            "time": "2016-03-31 18:11:01"
         },
         {
             "name": "symfony-cmf/routing-bundle",
@@ -7033,6 +7040,53 @@
                 "cms"
             ],
             "time": "2014-10-21 15:56:56"
+        },
+        {
+            "name": "symfony-cmf/slugifier-api",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony-cmf/slugifier-api.git",
+                "reference": "32537551dbb6ed831b7523d7e63367d3fcea1c37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony-cmf/slugifier-api/zipball/32537551dbb6ed831b7523d7e63367d3fcea1c37",
+                "reference": "32537551dbb6ed831b7523d7e63367d3fcea1c37",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.9|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Cmf\\Api\\Slugifier\\": "",
+                    "Symfony\\Cmf\\Bundle\\CoreBundle\\Slugifier\\": "CoreBundle"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony CMF Community",
+                    "homepage": "https://github.com/symfony-cmf/slugifier-api/contributors"
+                }
+            ],
+            "description": "Provides a basic slugifier interface to transform text into strings suitable for URLs",
+            "homepage": "http://cmf.symfony.com",
+            "keywords": [
+                "slugify",
+                "urlize"
+            ],
+            "time": "2016-03-31 08:06:29"
         },
         {
             "name": "symfony-cmf/symfony-cmf",
