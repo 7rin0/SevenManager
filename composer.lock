@@ -6241,12 +6241,12 @@
             "version": "1.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony-cmf/BlockBundle.git",
+                "url": "https://github.com/symfony-cmf/block-bundle.git",
                 "reference": "f0e6a935a4fb3e6ce71b2acf987d732854946388"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/BlockBundle/zipball/f0e6a935a4fb3e6ce71b2acf987d732854946388",
+                "url": "https://api.github.com/repos/symfony-cmf/block-bundle/zipball/f0e6a935a4fb3e6ce71b2acf987d732854946388",
                 "reference": "f0e6a935a4fb3e6ce71b2acf987d732854946388",
                 "shasum": ""
             },
@@ -6309,12 +6309,12 @@
             "version": "1.2.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony-cmf/ContentBundle.git",
+                "url": "https://github.com/symfony-cmf/content-bundle.git",
                 "reference": "dfe74437ecb1b022c46dfd577d49c532627b3d10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/ContentBundle/zipball/dfe74437ecb1b022c46dfd577d49c532627b3d10",
+                "url": "https://api.github.com/repos/symfony-cmf/content-bundle/zipball/dfe74437ecb1b022c46dfd577d49c532627b3d10",
                 "reference": "dfe74437ecb1b022c46dfd577d49c532627b3d10",
                 "shasum": ""
             },
@@ -6373,12 +6373,12 @@
             "version": "1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony-cmf/CoreBundle.git",
+                "url": "https://github.com/symfony-cmf/core-bundle.git",
                 "reference": "496e5f39c99afe41ab93f008586bdb8c3082ef82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/CoreBundle/zipball/496e5f39c99afe41ab93f008586bdb8c3082ef82",
+                "url": "https://api.github.com/repos/symfony-cmf/core-bundle/zipball/496e5f39c99afe41ab93f008586bdb8c3082ef82",
                 "reference": "496e5f39c99afe41ab93f008586bdb8c3082ef82",
                 "shasum": ""
             },
@@ -6491,12 +6491,12 @@
             "version": "1.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony-cmf/MediaBundle.git",
+                "url": "https://github.com/symfony-cmf/media-bundle.git",
                 "reference": "49c7c0a3f1cb5aaabef7c5bac196b71b3b8fe282"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/MediaBundle/zipball/49c7c0a3f1cb5aaabef7c5bac196b71b3b8fe282",
+                "url": "https://api.github.com/repos/symfony-cmf/media-bundle/zipball/49c7c0a3f1cb5aaabef7c5bac196b71b3b8fe282",
                 "reference": "49c7c0a3f1cb5aaabef7c5bac196b71b3b8fe282",
                 "shasum": ""
             },
@@ -6553,12 +6553,12 @@
             "version": "1.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony-cmf/MenuBundle.git",
+                "url": "https://github.com/symfony-cmf/menu-bundle.git",
                 "reference": "eb056fc02a6ad86af7be2ded97a9e6494d16c305"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/MenuBundle/zipball/eb056fc02a6ad86af7be2ded97a9e6494d16c305",
+                "url": "https://api.github.com/repos/symfony-cmf/menu-bundle/zipball/eb056fc02a6ad86af7be2ded97a9e6494d16c305",
                 "reference": "eb056fc02a6ad86af7be2ded97a9e6494d16c305",
                 "shasum": ""
             },
@@ -6730,12 +6730,12 @@
             "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony-cmf/RoutingAutoBundle.git",
+                "url": "https://github.com/symfony-cmf/routing-auto-bundle.git",
                 "reference": "cff61d9e23f3ff1ee209e371e09e5d1b84e74e68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/RoutingAutoBundle/zipball/cff61d9e23f3ff1ee209e371e09e5d1b84e74e68",
+                "url": "https://api.github.com/repos/symfony-cmf/routing-auto-bundle/zipball/cff61d9e23f3ff1ee209e371e09e5d1b84e74e68",
                 "reference": "cff61d9e23f3ff1ee209e371e09e5d1b84e74e68",
                 "shasum": ""
             },
@@ -6793,12 +6793,12 @@
             "version": "1.3.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony-cmf/RoutingBundle.git",
+                "url": "https://github.com/symfony-cmf/routing-bundle.git",
                 "reference": "c4950dda9c4f60d2186d24bf7c7e1b4c05f5daf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/RoutingBundle/zipball/c4950dda9c4f60d2186d24bf7c7e1b4c05f5daf6",
+                "url": "https://api.github.com/repos/symfony-cmf/routing-bundle/zipball/c4950dda9c4f60d2186d24bf7c7e1b4c05f5daf6",
                 "reference": "c4950dda9c4f60d2186d24bf7c7e1b4c05f5daf6",
                 "shasum": ""
             },
@@ -6859,12 +6859,12 @@
             "version": "1.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony-cmf/SearchBundle.git",
+                "url": "https://github.com/symfony-cmf/search-bundle.git",
                 "reference": "0330515fb7a803b2d30ea040c127c32ecb360751"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/SearchBundle/zipball/0330515fb7a803b2d30ea040c127c32ecb360751",
+                "url": "https://api.github.com/repos/symfony-cmf/search-bundle/zipball/0330515fb7a803b2d30ea040c127c32ecb360751",
                 "reference": "0330515fb7a803b2d30ea040c127c32ecb360751",
                 "shasum": ""
             },
@@ -6912,12 +6912,12 @@
             "version": "1.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony-cmf/SeoBundle.git",
+                "url": "https://github.com/symfony-cmf/seo-bundle.git",
                 "reference": "ed623de92d1ad33a7424d0150bc544b38dac1370"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/SeoBundle/zipball/ed623de92d1ad33a7424d0150bc544b38dac1370",
+                "url": "https://api.github.com/repos/symfony-cmf/seo-bundle/zipball/ed623de92d1ad33a7424d0150bc544b38dac1370",
                 "reference": "ed623de92d1ad33a7424d0150bc544b38dac1370",
                 "shasum": ""
             },
@@ -6982,12 +6982,12 @@
             "version": "1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony-cmf/SimpleCmsBundle.git",
+                "url": "https://github.com/symfony-cmf/simple-cms-bundle.git",
                 "reference": "a45ce134d5932e2377437f8d2cf20077c1aaed40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/SimpleCmsBundle/zipball/a45ce134d5932e2377437f8d2cf20077c1aaed40",
+                "url": "https://api.github.com/repos/symfony-cmf/simple-cms-bundle/zipball/a45ce134d5932e2377437f8d2cf20077c1aaed40",
                 "reference": "a45ce134d5932e2377437f8d2cf20077c1aaed40",
                 "shasum": ""
             },
@@ -7153,12 +7153,12 @@
             "version": "1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony-cmf/TreeBrowserBundle.git",
+                "url": "https://github.com/symfony-cmf/tree-browser-bundle.git",
                 "reference": "af70f9bb8afc9921eb825b4f7a82fe2bbb90cf01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/TreeBrowserBundle/zipball/af70f9bb8afc9921eb825b4f7a82fe2bbb90cf01",
+                "url": "https://api.github.com/repos/symfony-cmf/tree-browser-bundle/zipball/af70f9bb8afc9921eb825b4f7a82fe2bbb90cf01",
                 "reference": "af70f9bb8afc9921eb825b4f7a82fe2bbb90cf01",
                 "shasum": ""
             },
