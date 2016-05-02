@@ -6669,12 +6669,12 @@
             "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony-cmf/RoutingAuto.git",
+                "url": "https://github.com/symfony-cmf/routing-auto.git",
                 "reference": "043260095bda5b4aec9ddb9449d2036a9b843efc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/RoutingAuto/zipball/043260095bda5b4aec9ddb9449d2036a9b843efc",
+                "url": "https://api.github.com/repos/symfony-cmf/routing-auto/zipball/043260095bda5b4aec9ddb9449d2036a9b843efc",
                 "reference": "043260095bda5b4aec9ddb9449d2036a9b843efc",
                 "shasum": ""
             },
