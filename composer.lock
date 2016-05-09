@@ -5456,12 +5456,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/exporter.git",
-                "reference": "c5bdb7ee45a7049cb0e634436453ef0509be8861"
+                "reference": "b08b7cdfba40bb4a5b4cd52c06ee3793d89efca1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/c5bdb7ee45a7049cb0e634436453ef0509be8861",
-                "reference": "c5bdb7ee45a7049cb0e634436453ef0509be8861",
+                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/b08b7cdfba40bb4a5b4cd52c06ee3793d89efca1",
+                "reference": "b08b7cdfba40bb4a5b4cd52c06ee3793d89efca1",
                 "shasum": ""
             },
             "require": {
@@ -5512,7 +5512,7 @@
                 "export",
                 "xls"
             ],
-            "time": "2016-05-07 13:10:24"
+            "time": "2016-05-09 05:43:03"
         },
         {
             "name": "sonata-project/formatter-bundle",
