@@ -5456,12 +5456,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/exporter.git",
-                "reference": "8a84b75599f66a7039915a06a6f0f3737142947c"
+                "reference": "4706b0f579a426504a9b7c0c7c5fa80c07499d02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/8a84b75599f66a7039915a06a6f0f3737142947c",
-                "reference": "8a84b75599f66a7039915a06a6f0f3737142947c",
+                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/4706b0f579a426504a9b7c0c7c5fa80c07499d02",
+                "reference": "4706b0f579a426504a9b7c0c7c5fa80c07499d02",
                 "shasum": ""
             },
             "require": {
@@ -5471,20 +5471,20 @@
                 "fabpot/php-cs-fixer": "~0.1 || ^1.0",
                 "propel/propel1": "^1.6",
                 "sllh/php-cs-fixer-styleci-bridge": "^2.0",
-                "symfony/phpunit-bridge": "^2.7 || ^3.0",
-                "symfony/property-access": "^2.3 || ^3.0",
-                "symfony/routing": "^2.3 || ^3.0"
+                "symfony/phpunit-bridge": "^2.8 || ^3.0",
+                "symfony/property-access": "^2.8 || ^3.0",
+                "symfony/routing": "^2.8 || ^3.0"
             },
             "suggest": {
                 "ext-curl": "*",
                 "propel/propel1": "^1.6",
-                "symfony/property-access": "^2.3 || ^3.0",
-                "symfony/routing": "^2.3 || ^3.0"
+                "symfony/property-access": "^2.8 || ^3.0",
+                "symfony/routing": "^2.8 || ^3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -5512,7 +5512,7 @@
                 "export",
                 "xls"
             ],
-            "time": "2016-05-09 21:30:45"
+            "time": "2016-05-17 06:07:11"
         },
         {
             "name": "sonata-project/formatter-bundle",
