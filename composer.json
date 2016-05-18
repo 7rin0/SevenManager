@@ -58,7 +58,7 @@
     "sonata-project/markitup-bundle": "^2.1@dev",
     "sonata-project/comment-bundle": "^2.2@dev",
     "sonata-project/google-authenticator": "^1.0",
-    "sonata-project/exporter": "dev-master",
+    "sonata-project/exporter": "1.4.1",
     "sonata-project/classification-bundle": "~2.2",
     "doctrine/doctrine-bundle": "~1.6",
     "doctrine/phpcr-odm": "1.2.6",
