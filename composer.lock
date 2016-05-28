@@ -299,16 +299,16 @@
         },
         {
             "name": "components/jquery",
-            "version": "1.12.1",
+            "version": "1.12.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/jquery.git",
-                "reference": "b3879795fd6fa63ef364cdf9ae6cd779d61edfb2"
+                "reference": "5dd7297d7603e11e53bdcca2a71074d92de37b8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/jquery/zipball/b3879795fd6fa63ef364cdf9ae6cd779d61edfb2",
-                "reference": "b3879795fd6fa63ef364cdf9ae6cd779d61edfb2",
+                "url": "https://api.github.com/repos/components/jquery/zipball/5dd7297d7603e11e53bdcca2a71074d92de37b8f",
+                "reference": "5dd7297d7603e11e53bdcca2a71074d92de37b8f",
                 "shasum": ""
             },
             "type": "component",
@@ -337,7 +337,7 @@
             ],
             "description": "jQuery JavaScript Library",
             "homepage": "http://jquery.com",
-            "time": "2016-02-24 08:51:35"
+            "time": "2016-05-25 06:50:04"
         },
         {
             "name": "components/jqueryui",
@@ -2021,17 +2021,17 @@
         },
         {
             "name": "friendsofsymfony/rest-bundle",
-            "version": "1.7.8",
+            "version": "1.7.9",
             "target-dir": "FOS/RestBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "691e7c52d7cf9df266c6404180eda1e47cc64f59"
+                "reference": "9449e451074e98ee6fdc45c18fa857c71baf1dfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/691e7c52d7cf9df266c6404180eda1e47cc64f59",
-                "reference": "691e7c52d7cf9df266c6404180eda1e47cc64f59",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/9449e451074e98ee6fdc45c18fa857c71baf1dfe",
+                "reference": "9449e451074e98ee6fdc45c18fa857c71baf1dfe",
                 "shasum": ""
             },
             "require": {
@@ -2104,7 +2104,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2016-03-03 17:30:37"
+            "time": "2016-05-15 23:18:24"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -4953,16 +4953,16 @@
         },
         {
             "name": "sonata-project/classification-bundle",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataClassificationBundle.git",
-                "reference": "7f19f1ea34a6ab43262dcd462626ad060351174c"
+                "reference": "a0ae1fb4d96047b3003bd19b64b8eecea5722300"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataClassificationBundle/zipball/7f19f1ea34a6ab43262dcd462626ad060351174c",
-                "reference": "7f19f1ea34a6ab43262dcd462626ad060351174c",
+                "url": "https://api.github.com/repos/sonata-project/SonataClassificationBundle/zipball/a0ae1fb4d96047b3003bd19b64b8eecea5722300",
+                "reference": "a0ae1fb4d96047b3003bd19b64b8eecea5722300",
                 "shasum": ""
             },
             "require": {
@@ -4982,7 +4982,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -5012,20 +5012,20 @@
                 "tag",
                 "taxonomy"
             ],
-            "time": "2014-09-11 13:57:44"
+            "time": "2016-05-26 10:33:34"
         },
         {
             "name": "sonata-project/comment-bundle",
-            "version": "dev-master",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCommentBundle.git",
-                "reference": "ef97c7f6f1c6a11238cb8ceffd4164fa5b4e8f17"
+                "reference": "77fdbc3295a7d213c6ba14bb837d139b5355267a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCommentBundle/zipball/ef97c7f6f1c6a11238cb8ceffd4164fa5b4e8f17",
-                "reference": "ef97c7f6f1c6a11238cb8ceffd4164fa5b4e8f17",
+                "url": "https://api.github.com/repos/sonata-project/SonataCommentBundle/zipball/77fdbc3295a7d213c6ba14bb837d139b5355267a",
+                "reference": "77fdbc3295a7d213c6ba14bb837d139b5355267a",
                 "shasum": ""
             },
             "require": {
@@ -5050,7 +5050,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -5073,13 +5073,13 @@
                     "homepage": "https://sonata-project.org"
                 }
             ],
-            "description": "Symfony SonataCommentBundle",
+            "description": "Integrate the FOSCommentBundle in the Sonata Project",
             "homepage": "https://sonata-project.org/bundles/comment",
             "keywords": [
                 "comment",
                 "sonata"
             ],
-            "time": "2016-04-03 06:38:54"
+            "time": "2016-05-26 22:09:28"
         },
         {
             "name": "sonata-project/core-bundle",
@@ -5973,24 +5973,26 @@
         },
         {
             "name": "sonata-project/page-bundle",
-            "version": "2.3.9",
+            "version": "2.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataPageBundle.git",
-                "reference": "26a3f2be725511794e68b04f45419126dd64f23b"
+                "reference": "d279eb1fd5afdbb0011d7fd308667f9cac3a5a8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataPageBundle/zipball/26a3f2be725511794e68b04f45419126dd64f23b",
-                "reference": "26a3f2be725511794e68b04f45419126dd64f23b",
+                "url": "https://api.github.com/repos/sonata-project/SonataPageBundle/zipball/d279eb1fd5afdbb0011d7fd308667f9cac3a5a8f",
+                "reference": "d279eb1fd5afdbb0011d7fd308667f9cac3a5a8f",
                 "shasum": ""
             },
             "require": {
+                "cocur/slugify": "~1.0",
                 "friendsofsymfony/rest-bundle": "~1.1",
                 "jms/serializer-bundle": "~0.11",
                 "nelmio/api-doc-bundle": "~2.4",
-                "sonata-project/admin-bundle": "~2.2,>=2.2.9",
-                "sonata-project/block-bundle": "~2.2,<2.3",
+                "sonata-project/admin-bundle": "^2.2.9",
+                "sonata-project/block-bundle": "^2.2.9,<2.3",
+                "sonata-project/cache": "^1.0.2",
                 "sonata-project/cache-bundle": "~2.1,>=2.1.7",
                 "sonata-project/core-bundle": "~2.2",
                 "sonata-project/datagrid-bundle": "~2.2@dev",
@@ -6000,9 +6002,14 @@
                 "symfony-cmf/routing-bundle": "~1.1",
                 "symfony/symfony": "~2.2"
             },
+            "conflict": {
+                "jms/serializer": "<0.13"
+            },
             "require-dev": {
+                "fabpot/php-cs-fixer": "~0.1|~1.0",
                 "sonata-project/core-bundle": "~2.3@dev",
-                "sonata-project/doctrine-orm-admin-bundle": "~2.2"
+                "sonata-project/doctrine-orm-admin-bundle": "~2.2",
+                "symfony/phpunit-bridge": "~2.7|~3.0"
             },
             "suggest": {
                 "sonata-project/doctrine-orm-admin-bundle": "~2.2"
@@ -6040,7 +6047,7 @@
                 "page",
                 "sonata"
             ],
-            "time": "2015-03-16 15:50:44"
+            "time": "2016-02-19 15:53:12"
         },
         {
             "name": "sonata-project/seo-bundle",
