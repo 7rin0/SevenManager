@@ -6434,16 +6434,16 @@
         },
         {
             "name": "symfony-cmf/create-bundle",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony-cmf/CreateBundle.git",
-                "reference": "86a3ade0210bc30b304f9d992ff21c403681d7f3"
+                "url": "https://github.com/symfony-cmf/create-bundle.git",
+                "reference": "09e0ff6ac4739456a17fa7462f27cb8413e3640d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/CreateBundle/zipball/86a3ade0210bc30b304f9d992ff21c403681d7f3",
-                "reference": "86a3ade0210bc30b304f9d992ff21c403681d7f3",
+                "url": "https://api.github.com/repos/symfony-cmf/create-bundle/zipball/09e0ff6ac4739456a17fa7462f27cb8413e3640d",
+                "reference": "09e0ff6ac4739456a17fa7462f27cb8413e3640d",
                 "shasum": ""
             },
             "require": {
@@ -6488,7 +6488,7 @@
                 }
             ],
             "description": "Symfony Bundle for createphp and create.js. The easiest way to make any site editable and have semantic annotations with RDFa.",
-            "time": "2015-12-26 09:43:12"
+            "time": "2016-03-22 09:13:24"
         },
         {
             "name": "symfony-cmf/media-bundle",
