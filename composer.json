@@ -77,7 +77,7 @@
     "wjzijderveld/check-bundles": "^2.0@dev",
     "elasticsearch/elasticsearch": "~2.0",
     "gedmo/doctrine-extensions": "^2.4",
-    "phpcr/phpcr-shell": "dev-master",
+    "phpcr/phpcr-shell": "1.0.0-beta4",
     "cocur/slugify": "v1.4",
     "zendframework/zend-code": "2.6.3"
   },

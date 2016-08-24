@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "128e9a89f054abee35e240a896ac9a73",
-    "content-hash": "819a3f73f2e05f8c83ec3f4bef675fb5",
+    "hash": "ce1d4c71964f5685c9f32b63eed22712",
+    "content-hash": "0b6757f7c5d0ca386e7dfe649ecf792d",
     "packages": [
         {
             "name": "7rin0/seven-manager-bundle",
@@ -4142,16 +4142,16 @@
         },
         {
             "name": "phpcr/phpcr-shell",
-            "version": "dev-master",
+            "version": "1.0.0-beta4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpcr/phpcr-shell.git",
-                "reference": "491d657db6d6f1f78130037d00af84404036c7c5"
+                "reference": "016f30ad500f48c8478a1f6bfb251e1ae50efbd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpcr/phpcr-shell/zipball/491d657db6d6f1f78130037d00af84404036c7c5",
-                "reference": "491d657db6d6f1f78130037d00af84404036c7c5",
+                "url": "https://api.github.com/repos/phpcr/phpcr-shell/zipball/016f30ad500f48c8478a1f6bfb251e1ae50efbd8",
+                "reference": "016f30ad500f48c8478a1f6bfb251e1ae50efbd8",
                 "shasum": ""
             },
             "require": {
@@ -4210,7 +4210,7 @@
                 }
             ],
             "description": "Shell for PHPCR",
-            "time": "2016-08-04 13:23:10"
+            "time": "2015-11-06 09:45:42"
         },
         {
             "name": "phpcr/phpcr-utils",
@@ -8373,8 +8373,7 @@
         "symfony-cmf/content-bundle": 20,
         "sonata-project/markitup-bundle": 20,
         "sonata-project/comment-bundle": 20,
-        "wjzijderveld/check-bundles": 20,
-        "phpcr/phpcr-shell": 20
+        "wjzijderveld/check-bundles": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
