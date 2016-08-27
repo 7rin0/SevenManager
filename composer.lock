@@ -453,16 +453,16 @@
         },
         {
             "name": "dantleech/glob-finder",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dantleech/glob.git",
-                "reference": "d810c78826ed5140f941269c7ecf5f3ef7703df0"
+                "reference": "1f618e6b77a5de4c6b0538d82572fe19cbb1c446"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dantleech/glob/zipball/d810c78826ed5140f941269c7ecf5f3ef7703df0",
-                "reference": "d810c78826ed5140f941269c7ecf5f3ef7703df0",
+                "url": "https://api.github.com/repos/dantleech/glob/zipball/1f618e6b77a5de4c6b0538d82572fe19cbb1c446",
+                "reference": "1f618e6b77a5de4c6b0538d82572fe19cbb1c446",
                 "shasum": ""
             },
             "require-dev": {
@@ -476,11 +476,6 @@
                 "doctrine/phpcr-odm": "To enable support for the PHPCR ODM documents"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "DTL\\Glob\\": "lib/DTL/Glob"
@@ -498,7 +493,7 @@
             ],
             "description": "Library offering object location from hierarchrical persistent storage systems using globs",
             "homepage": "http://www.github.com/dantleech/glob",
-            "time": "2015-03-18 08:13:31"
+            "time": "2016-08-23 14:48:07"
         },
         {
             "name": "dflydev/markdown",
@@ -2226,16 +2221,16 @@
         },
         {
             "name": "gedmo/doctrine-extensions",
-            "version": "v2.4.20",
+            "version": "v2.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Atlantic18/DoctrineExtensions.git",
-                "reference": "24cd861d755282f4c9fb1c8f4634ffd6ca12182b"
+                "reference": "dcaab46a25e1baeb5142c3e25d5b6fd495ced504"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Atlantic18/DoctrineExtensions/zipball/24cd861d755282f4c9fb1c8f4634ffd6ca12182b",
-                "reference": "24cd861d755282f4c9fb1c8f4634ffd6ca12182b",
+                "url": "https://api.github.com/repos/Atlantic18/DoctrineExtensions/zipball/dcaab46a25e1baeb5142c3e25d5b6fd495ced504",
+                "reference": "dcaab46a25e1baeb5142c3e25d5b6fd495ced504",
                 "shasum": ""
             },
             "require": {
@@ -2301,7 +2296,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2016-07-30 15:51:52"
+            "time": "2016-08-17 16:52:00"
         },
         {
             "name": "guzzlehttp/ringphp",
