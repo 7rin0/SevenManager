@@ -79,7 +79,8 @@
     "gedmo/doctrine-extensions": "^2.4",
     "phpcr/phpcr-shell": "1.0.0-beta4",
     "cocur/slugify": "v1.4",
-    "zendframework/zend-code": "2.6.3"
+    "zendframework/zend-code": "2.6.3",
+    "zendframework/zend-stdlib": "3.0.1"
   },
   "provide": {
     "phpcr/phpcr-implementation": "2.1.0"
